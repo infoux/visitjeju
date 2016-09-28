@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* Infomind Default CSS Reset : Last Update : 2016-07-13 */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    line-height: 1.4;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    word-break: break-all;
+    -ms-word-break: break-all;
+    -webkit-text-size-adjust: none
+}
+ol, ul, dl, li, menu {
+    list-style: none
+}
+blockquote, q {
+    quotes: none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+textarea {
+    overflow: auto
+}
+input, select, textarea, button, optgroup {
+    font-size: 100%;
+    vertical-align: middle;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+}
+em, address {
+    font-style: normal;
+}
+
+/* Hyper Link */
+
+a, a:link, a:visited, a:active, a:hover {
+    text-decoration: none
+}
+
+/* Form Type (html5 & Mobile) */
+
+input[type='text'], input[type='password'], input[type='submit'], input[type='search'], button, input[type='button'], input[type='submit'], input[type='reset'], input[type='file'] {
+    -webkit-appearance: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+input[type='checkbox'] {
+    -webkit-appearance: checkbox
+}
+input[type='radio'] {
+    -webkit-appearance: radio
+}
+input[type='number'] {
+    -webkit-appearance: none
+}
+input[type='search']::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+/* Hidden */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.sr-only-focusable:active, .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}

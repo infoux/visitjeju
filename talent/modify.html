@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>제주도좋아</title>
+    <link href="css/set.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <!-- javaScript  -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <!-- S:skip_navi -->
+    <div class="skip_navi">
+        <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+        <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+        <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+    </div>
+    <!-- E:skip_navi -->
+    <!-- S:header -->
+    <header id="header">
+        <div class="util-wrap">
+            <ul class="util-menu">
+                <li><a class="toggle-menu" href="#">전체메뉴</a></li>
+                <li><a class="toggle-mypage" href="#">마이페이지</a></li>
+            </ul>
+            <!-- S:main_menu -->
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <h2><a href="sub01.html">캠페인 소개</a></h2></li>
+                    <li>
+                        <h2><a href="">마이페이지</a></h2></li>
+                    <li>
+                        <h2><a href="">전체 참여 사진 보기</a></h2></li>
+                    <li>
+                        <h2><a href="">이용약관</a></h2></li>
+                    <li>
+                        <h2><a href="">개인정보취급방침</a></h2></li>
+                    <li>
+                        <h2><a href="login.html">로그인</a></h2></li>
+                    <li class="jto">
+                        <h2><a href="http://www.ijto.or.kr/" target="blank" title="새창열림"><img src="images/logo-jto.png" alt="제주관광공사"></a></h2></li>
+                </ul>
+            </nav>
+            <!-- E:main_menu -->
+        </div>
+        <h1>함께 만들어가는 제주 '제주도좋아'</h1>
+
+    </header>
+    <!-- E:header -->
+    <!-- S:mainContent -->
+    <article id="subContent" class="sights">
+        <h3 class="stitle">
+          <img src="images/stitle-reg.png" alt="관광지 등록">
+        </h3>
+        <section>
+            <fieldset>
+                <legend class="sr-only">
+                    관광지 정보 등록
+                </legend>
+
+                <dl>
+                    <dt>관광지명</dt>
+                    <dd>
+                        <div>
+                            <h3>에코랜드 테마파크</h3>
+                        </div>
+                    </dd>
+
+                    <dt>지역</dt>
+                    <dd>
+                        <div>
+                            <select title="지역명 1">
+                                <option>제주시</option>
+                            </select>
+                            <select title="지역명 2">
+                                <option>제주시</option>
+                            </select>
+                        </div>
+
+                    </dd>
+                    <dt>파일등록 </dt>
+                    <dd class="files">
+                        <div class="file-exist">
+                            <h4><label for="photo01">사진 #1</label></h4>
+                            <p class="photo"><img class="big-photo" src="http://www.gifpng.com/720x480"></p>
+                            <h5>관광지사진</h5>
+                            <p class="filename">
+                                <strong>myPhoto.jpg</strong>
+                                <button class="btn sub"><i class="fa fa-minus fa-2x" aria-hidden="true"></i> 사진삭제</button>
+                            </p>
+
+
+
+                        </div>
+                        <div>
+                            <h4><label for="photo02">사진 #2</label></h4>
+                            <input id="photo02" type="text" title="사진 2의 제목" placeholder="사진제목">
+                            <input type="file">
+                        </div>
+                        <div>
+                            <h4><label for="photo03">사진 #3</label></h4>
+                            <input id="photo03" type="text" title="사진 3의 제목" placeholder="사진제목">
+                            <input type="file">
+                        </div>
+                        <p>
+                            <button class="btn"><i class="fa fa-plus fa-2x" aria-hidden="true"></i> 사진추가</button>
+                        </p>
+                    </dd>
+                    <dt><label for="review">리뷰/후기</label></dt>
+                    <dd class="text">
+                        <div>
+                            <textarea id="review"></textarea>
+                        </div>
+                    </dd>
+                    <dt>평가</dt>
+                    <dd class="rate">
+                        <div>
+                            <button class="btn">1점<i class="fa fa-star" aria-hidden="true"></i></button>
+                            <button class="btn">2점<i class="fa fa-star" aria-hidden="true"></i></button>
+                            <button class="btn">3점<i class="fa fa-star-o" aria-hidden="true"></i></button>
+                            <button class="btn">4점<i class="fa fa-star-o" aria-hidden="true"></i></button>
+                            <button class="btn">5점<i class="fa fa-star-o" aria-hidden="true"></i></button>
+                        </div>
+                    </dd>
+                    <dt><label for="tel-first">연락처</label></dt>
+                    <dd class="tel">
+                        <div>
+                            <input id="tel-first" type="text" title="전화번호 앞자리">
+                            <i>-</i>
+                            <input id="" type="text" title="전화번호 중간">
+                            <i>-</i>
+                            <input id="" type="text" title="전화번호 뒷자리">
+                        </div>
+                    </dd>
+                    <dt><label for="mail-first">이메일</label></dt>
+                    <dd class="mail">
+                        <div>
+                            <input id="mail-first" type="text" title="메일주소 1">
+                            <i>@</i>
+                            <input type="text" title="메일주소 2">
+                        </div>
+                    </dd>
+                </dl>
+                <div>
+                    <p>
+                        <input type="checkbox" id="check01">
+                        <label for="check01">[필수] 등록한 사진 및 평가가 VisitJEJU 사이트의 관광콘텐츠 및 리뷰자료로 활용됨을 동의합니다.</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="check02">
+                        <label for="check02">[선택] 이벤트 당첨 시 안내를 위한 개인정보 수집에 동의합니다.</label>
+                    </p>
+                </div>
+
+
+
+            </fieldset>
+        </section>
+
+
+        <div class="btn-area">
+            <a class="btn btnB main full" href="">캠페인 등록완료</a>
+        </div>
+
+
+    </article>
+    <!-- E:mainContent -->
+    <!-- S:footer -->
+    <footer id="footer">
+        <div>
+            <h1><img src="images/logo-footer.png" alt="제주관광공사"></h1>
+            <address>
+              <p>63122 제주특별자치도 제주시 선덕로 23 제주웰컴센터</p>
+              <p>COPYRIGHT <strong>ⓒ JEJU TOURISM ORGANIZATION.</strong> ALL RIGHTS RESERVED. </p>
+            </address>
+            <div>
+                <p>TEL : 064 740 6000</p>
+                <p><a href="http://www.ijto.or.kr/" target="blank" title="새창열림">www.ijto.or.kr</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- E:footer -->
+</body>
+
+</html>

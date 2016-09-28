@@ -1,0 +1,3561 @@
+/* -------------- common -------------- */
+
+@media (max-width:360px) {
+    html {
+        font-size: 0.875rem;
+    }
+}
+
+@media (min-width:361px) and (max-width:413px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width:414px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    line-height: 1.4;
+    -webkit-text-size-adjust: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+hr {
+    border: none;
+}
+
+input[type=text], input[type=password] {
+    -webkit-border-radius: 0;
+    -webkit-appearance: none
+}
+
+li {
+    list-style: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 0.063rem;
+    height: 0.063rem;
+    margin: -0.063rem;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 0.063rem solid transparent;
+    white-space: nowrap;
+    padding: 0.375rem 0.750rem;
+    font-size: 0.875rem;
+    line-height: 1.42857143;
+    border-radius: 0.250rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: thin dotted;
+    outline: 0.313rem auto -webkit-focus-ring-color;
+    outline-offset: -0.125rem
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+    color: #333333;
+    text-decoration: none
+}
+
+.btn:active, .btn.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 0.188rem 0.313rem rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 0.188rem 0.313rem rgba(0, 0, 0, 0.125)
+}
+
+
+/* -------------- photo List -------------- */
+
+.articleList ul {
+    padding: 0;
+    margin: 0
+}
+
+.articleList li {
+    display: block;
+    text-align: center;
+    height: 12.729rem;
+    background: #fff;
+    overflow: hidden;
+    float: left;
+    width: 50%
+}
+
+.articleList li a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #000
+}
+
+.articleList li .title {
+    margin: 0;
+    padding: 0;
+    font-weight: 400
+}
+
+.articleList li.weather .title {
+    font-size: 1.875rem;
+    margin: 1.375rem 0 0.375rem
+}
+
+.articleList li.weather .icon {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 50%
+}
+
+.articleList li.weather .icon img {
+    width: 3.333rem;
+    height: 3.333rem;
+    margin-right: 0.625rem
+}
+
+.articleList li.weather .info {
+    display: block;
+    float: left;
+    text-align: left;
+    width: 50%;
+    height: 3.333rem;
+    font-size: 0.750rem;
+    line-height: 1
+}
+
+.articleList li.weather .info strong {
+    display: block;
+    font-weight: 400;
+    font-size: 2.375rem;
+}
+
+.articleList li.weather .text {
+    clear: both;
+    color: #666;
+    1.125rem
+}
+
+.articleList li.photo {
+    background: #eee
+}
+
+.articleList li.photo a {
+    background: url('../images/mainOverlay01.png') center / 100% 100%
+}
+
+.articleList li.photo.normal .title {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 1.354rem;
+    font-size: 1rem;
+    color: #fff
+}
+
+.articleList li.photo img {
+    display: none
+}
+
+.articleList li.text .title {
+    font-size: 1.294rem;
+    margin-top: 3.375rem
+}
+
+.articleList li.text hr {
+    width: 2.458rem;
+    margin: 0.750rem auto;
+    border-top: 0.063rem solid #000
+}
+
+.articleList li.text .info {
+    color: #666
+}
+
+.articleList li.photo.text a {
+    background: url('../images/mainOverlay02.png') center / 100% 100%
+}
+
+.articleList li.photo.text .title, .articleList li.photo.text .info {
+    color: #fff
+}
+
+.articleList li.photo.text hr {
+    width: 2.458rem;
+    margin: 0.750rem auto;
+    border-top: 0.063rem solid #fff
+}
+
+.articleList li.wide {
+    width: 100%;
+    vertical-align: top
+}
+
+.articleList li.wide div.text {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: #f4f4f4
+}
+
+.articleList li.wide div.text .title {
+    font-size: 1.294rem;
+    margin-top: 2.750rem
+}
+
+.articleList li.wide div.text hr {
+    width: 2.458rem;
+    margin: 1.063rem auto;
+    border-top: 0.063rem solid #000
+}
+
+.articleList li.wide div.photo {
+    display: block;
+    margin: 0;
+    padding: 1.458rem 0;
+    width: 50%;
+    height: 100%
+}
+
+.articleList li.wide div.photo img {
+    height: 100%
+}
+
+.articleList li.wide.left div.text {
+    float: left
+}
+
+.articleList li.wide.left div.photo {
+    float: right;
+    background: url('../images/wideLeft.png') no-repeat #fff left center / 0.708rem 1.458rem
+}
+
+.articleList li.wide.right div.text {
+    float: right
+}
+
+.articleList li.wide.right div.photo {
+    float: left;
+    background: url('../images/wideRight.png') no-repeat #fff right center / 0.708rem 1.458rem;
+}
+
+.articleList li.photo.noText a {
+    background: none
+}
+
+.articleList li.photo.noText .title, .articleList li.photo.noText .info {
+    display: none
+}
+
+
+/* -------------- Intro -------------- */
+
+body.intro {
+    background: #f7941d;
+    text-align: center
+}
+
+body.intro h1 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -7.022rem 0 0 -2.4665rem;
+    width: 4.933rem;
+    height: 7.022rem;
+    text-indent: -6249.938rem;
+    background: url('../images/introLogo.png') no-repeat center / 100%
+}
+
+body.intro p {
+    display: block;
+    color: #fff;
+    font-size: 0.867em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 3.733rem
+}
+
+.schedule-list {
+    margin: 15px;
+}
+
+.schedule-list>ul>li {
+    position: relative;
+    float: left;
+    width: calc(50% - 5px);
+    margin-bottom: 15px;
+}
+
+.schedule-list>ul>li:nth-child(odd) {
+    margin-right: 10px;
+}
+
+.schedule-list li h4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    color: #fff;
+}
+
+.schedule-list li img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.schedule-list li a {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/img-overlay.png') no-repeat center / 100% 100%;
+}
+
+.schedule-list li ul {
+    margin: 5px;
+}
+
+.schedule-list li li {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+    background: #000;
+    font-size: 0.5rem;
+}
+
+
+/* -------------- Login -------------- */
+
+body.login {
+    background: #f7941d;
+    text-align: center
+}
+
+body.login h1 {
+    font-size: 1.6rem;
+    display: inline-block;
+    margin: 4.292rem auto 1.333rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    font-weight: 400;
+    border-bottom: 0.067rem solid #fff;
+    text-align: center
+}
+
+body.login .info {
+    color: #fff;
+    margin: 0;
+    font-size: 0.867rem;
+    text-align: center
+}
+
+body.login .btnGroup {
+    margin-top: 2.978rem
+}
+
+body.login .btn {
+    display: block;
+    padding: 0;
+    text-indent: -6249.938rem;
+    width: 6.756rem;
+    height: 6.756rem;
+    margin: 0 auto 1.978rem auto;
+    border: none;
+    border-radius: 3.378rem
+}
+
+body.login .btn.facebook {
+    background: url('../images/loginFacebook.png') no-repeat center / 100%
+}
+
+body.login .btn.kakao {
+    background: url('../images/loginKakao.png') no-repeat center / 100%
+}
+
+body.login .btn.insta {
+    background: url('../images/loginInsta.png') no-repeat center / 100%;
+}
+
+body.login .guest {
+    display: inline-block;
+    border: none;
+    margin: 2.778rem auto;
+    background: url('../images/iconGuest.png') no-repeat right center / 0.5rem 0.833rem;
+    padding-right: 0.938rem;
+    color: #fff;
+    font-weight: 400;
+    text-align: center
+}
+
+
+/* -------------- Main -------------- */
+
+header.normal {
+    position: relative;
+    z-index: 999;
+    background: #fff;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 4.375rem;
+    line-height: 3.125rem;
+    padding-top: 1.250rem;
+    border-bottom: 0.067rem solid #e9e9e9
+}
+
+header.normal h1 {
+    display: block;
+    font-size: 1px;
+    color: transparent;
+    width: 9.500rem;
+    height: 1.725rem;
+    background: url('../images/logo.png') no-repeat center / 100%;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.locationList {
+    position: fixed;
+    display: none;
+    text-align: center;
+    z-index: 999;
+    top: 4.375rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7)
+}
+
+.locationList ul {
+    display: inline-block;
+    background: #fff;
+    width: 100%;
+    padding: 1.250rem 0.938rem;
+    margin: 0
+}
+
+.locationList li {
+    list-style: none;
+    display: block;
+    float: left;
+    width: calc(100% / 3);
+    height: 2.063rem;
+    margin-bottom: 0.688rem
+}
+
+.locationList li a {
+    display: block;
+    width: calc(100% - 1.250rem);
+    height: 2.063rem;
+    line-height: 2.063rem;
+    padding: 0;
+    font-size: 0.938rem;
+    color: #000;
+    margin: 0 0.625rem;
+    background: #f6f6f6;
+    border: 0.063rem solid #e0e0e0;
+    text-align: center
+}
+
+.locationList li a:active, .locationList li a:hover {
+    text-decoration: none
+}
+
+.locationList li a.active {
+    background: #f7941d;
+    color: #fff;
+    border-color: #f7941d
+}
+
+.locationList .btn.locationClose {
+    width: 2.813rem;
+    height: 2.813rem;
+    margin-top: 1rem;
+    text-indent: -6249.938rem;
+    border-radius: 1.438rem;
+    background: url('../images/locationClose.png') no-repeat #fff center / 100% 100%
+}
+
+header.normal .buttonGroup .btn {
+    position: absolute;
+    bottom: 1rem;
+    text-indent: -6249.938rem;
+    padding: 0
+}
+
+header.normal .buttonGroup .btn.location {
+    left: 0.625rem;
+    width: 1.542rem;
+    height: 2rem;
+    background: url('../images/mainLocation.png') no-repeat center / 100%
+}
+
+header.normal .buttonGroup .btn.search {
+    right: 3.875rem;
+    width: 1.375rem;
+    height: 2rem;
+    background: url('../images/mainSearch.png') no-repeat center / 100%
+}
+
+header.normal .buttonGroup .btn.map {
+    right: 0.625rem;
+    width: 2.625rem;
+    height: 2rem;
+    background: url('../images/mainMap.png') no-repeat center / 100%
+}
+
+header button.back {
+    position: absolute;
+    padding: 0;
+    width: 2.750rem;
+    height: 2.750rem;
+    text-indent: -6249.938rem;
+    background: url('../images/btnBack.png') no-repeat center / 0.688rem 1.229rem;
+    left: 0;
+    bottom: 0;
+}
+
+header.normal .btn.back {
+    bottom: 0.625rem;
+}
+
+header.normal .buttonGroup .btn:active, header.norma l.buttonGroup .btn:hover {
+    background-color: #eee
+}
+
+body.main .mainMap {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 266.6px;
+    overflow: hidden;
+    background: url('../images/map.png') no-repeat #4fb1b3 center top / 320px 100%;
+}
+
+body.main .mainMap li {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+body.main .mainMap li a {
+    display: block;
+    font-size: 13px;
+    color: #50692F;
+}
+
+body.main .mainMap li.map01 {
+    margin-left: -26px;
+    top: 94px;
+}
+
+body.main .mainMap li.map02 {
+    margin-left: 30px;
+    top: 80px;
+}
+
+body.main .mainMap li.map03 {
+    margin-left: 76px;
+    top: 82px;
+}
+
+body.main .mainMap li.map04 {
+    margin-left: 102px;
+    top: 112px;
+}
+
+body.main .mainMap li.map05 {
+    margin-left: 66px;
+    top: 132px;
+}
+
+body.main .mainMap li.map06 {
+    margin-left: 24px;
+    top: 148px;
+}
+
+body.main .mainMap li.map07 {
+    margin-left: -14px;
+    top: 174px;
+}
+
+body.main .mainMap li.map08 {
+    margin-left: -52px;
+    top: 170px;
+}
+
+body.main .mainMap li.map09 {
+    margin-left: -100px;
+    top: 176px;
+}
+
+body.main .mainMap li.map10 {
+    margin-left: -134px;
+    top: 182px;
+}
+
+body.main .mainMap li.map11 {
+    margin-left: -142px;
+    top: 150px;
+}
+
+body.main .mainMap li.map12 {
+    margin-left: -122px;
+    top: 130px;
+}
+
+body.main .mainMap li.map13 {
+    margin-left: -80px;
+    top: 106px;
+}
+
+body.main .mainMap li.active {
+    background: #50692F;
+    padding: 2px 10px;
+    margin-top: -2px;
+    left: calc(50% - 10px);
+    border-radius: 6px;
+}
+
+body.main .mainMap li.active a {
+    color: #fff;
+}
+
+body.main .mainMap div {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+body.main .mainMap div.weather01 {
+    margin-left: -54px;
+    top: 14px;
+}
+
+body.main .mainMap div.weather02 {
+    margin-left: -66px;
+    top: 212px;
+}
+
+body.main .mainMap div.weather03 {
+    margin-left: -160px;
+    top: 64px;
+}
+
+body.main .mainMap div.weather04 {
+    margin-left: 64px;
+    top: 182px;
+}
+
+body.main .mainMap div p {
+    display: inline-block;
+}
+
+body.main .mainMap div .icon {
+    width: 34px;
+    height: 34px;
+    margin-right: 2px;
+}
+
+body.main .mainMap div .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+body.main .mainMap div .info {
+    font-size: 10px;
+    line-height: 1
+}
+
+body.main .mainMap div .info strong {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+nav.depth1 {}
+
+body.sub nav.depth1 {
+    border-top: 0.063rem solid #e2e2e2;
+}
+
+nav.depth1 ul {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    line-height: 1.4;
+}
+
+nav.depth1 li {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    font-size: 1rem;
+    height: 4.438rem;
+    text-align: center;
+    border-bottom: 0.063rem solid #e9e9e9;
+    cursor: pointer
+}
+
+nav.depth1 li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #000
+}
+
+nav.depth1 li a:active, nav.depth1 li a:hover {
+    text-decoration: none
+}
+
+nav.depth1 li.active, nav.depth1 li.active a {
+    color: #f07c00;
+    text-decoration: none
+}
+
+nav.depth1 li span {
+    display: block;
+    width: 2.417rem;
+    height: 1.875rem;
+    margin: 0.646rem auto 0
+}
+
+nav.depth1 li.all span {
+    background: url('../images/btnAll.png') no-repeat center top / 1.917rem auto;
+}
+
+nav.depth1 li.spot span {
+    background: url('../images/btnSpot.png') no-repeat center top / 1.917rem auto;
+}
+
+nav.depth1 li.lodge span {
+    background: url('../images/btnLodge.png') no-repeat center top / 1.500rem auto;
+}
+
+nav.depth1 li.food span {
+    background: url('../images/btnFood.png') no-repeat center top / 1.979rem auto
+}
+
+nav.depth1 li.shopping span {
+    background: url('../images/btnShopping.png') no-repeat center top / 1.188rem auto
+}
+
+nav.depth1 li.active span {
+    background-position: center bottom
+}
+
+nav.depth1 .category {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+nav.depth1 .category {
+    display: block;
+    width: 100%;
+    padding: 0 1.250rem;
+    overflow-x: scroll;
+    white-space: nowrap
+}
+
+nav.depth1 .category a {
+    display: inline-block;
+    color: #000;
+    padding: 1rem 0.5rem;
+}
+
+nav.depth1 .category a.active {
+    color: #ec6d00;
+}
+
+nav.depth1 .category::-webkit-scrollbar {
+    display: none
+}
+
+body.main #mainHot {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+body.main #mainHot .slider {
+    display: inline-block;
+    width: 100%;
+}
+
+body.main #mainHot .bx-item {
+    margin-right: -2.500rem;
+    margin-left: 10px;
+}
+
+body.main #mainHot div.item {
+    width: calc(100% - 2.500rem);
+    max-height: 8.125rem;
+    overflow: hidden;
+    margin-bottom: 0.625rem;
+    position: relative;
+}
+
+body.main #mainHot div.item a {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body.main #mainHot .more a {
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0.625rem;
+    width: 0;
+    overflow: hidden;
+    color: transparent;
+    word-break: keep-all;
+    background: url(../images/wideLeft.png) no-repeat rgba(0, 0, 0, 0.6) center / 0.875rem auto;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+body.main #mainHot .more.on a {
+    width: 2.875rem;
+    border-right: none;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0.063rem 0.063rem 0.125rem 0.063rem;
+}
+
+body.main #mainHot img {
+    width: 100%;
+    height: auto;
+}
+
+body.main #mainHot h4 {
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    bottom: 1.250erm;
+    text-align: center;
+    width: 100%;
+    font-size: 1.250rem;
+    color: #fff;
+}
+
+body.main .foryou, body.main .recommend {
+    display: inline-block;
+    width: 100%;
+    padding: 0.625rem 0;
+}
+
+body.main .foryou h3, body.main .recommend h3 {
+    font-weight: 400;
+    margin: 1.250rem 0.625rem 0.625rem;
+}
+
+body.main .foryou ul {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap
+}
+
+body.main .foryou ul::-webkit-scrollbar {
+    display: none
+}
+
+body.main .foryou li:first-child, body.main .recommend li:first-child {
+    margin-left: 0.625rem;
+}
+
+body.main .foryou li {
+    display: inline-block;
+    width: 15rem;
+    height: auto;
+    margin-right: 0.625rem;
+    position: relative;
+}
+
+body.main .foryou li a {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url('../images/mainOverlay01.png') no-repeat center / 100%;
+}
+
+body.main .foryou li img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+body.main .foryou li h4 {
+    position: absolute;
+    left: 0.625rem;
+    font-weight: 400;
+    font-size: 0.750rem;
+    bottom: 0.625rem;
+    color: #fff;
+}
+
+body.main .foryou li h4 strong {
+    display: block;
+    font-size: 1rem;
+}
+
+body.main .recommend ul {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap
+}
+
+body.main .recommend ul::-webkit-scrollbar {
+    display: none
+}
+
+body.main .recommend li {
+    display: inline-block;
+    margin-right: 0.625rem;
+}
+
+body.main .recommend img {
+    width: 100%;
+    height: 100%;
+}
+
+body.main .recommend a {
+    display: block;
+    position: relative;
+    width: 5.750rem;
+    height: 5.750rem;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+body.main .recommend li h4 {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.875rem;
+    font-weight: 400;
+    font-size: 0.563rem;
+    color: #fff;
+}
+
+body.main .recommend li h4 strong {
+    display: block;
+    font-size: 1rem;
+}
+
+
+/* --------------  sub default --------------  */
+
+
+/*
+body.sub header {
+    position: fixed;
+    z-index: 998;
+    background: #fff;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding-top: 1.250rem;
+    height: 4.375rem;
+    line-height: 3.146rem;
+    text-align: center;
+    border-bottom: 0.067rem solid #e9e9e9
+}
+body.sub header h2 {
+    display: inline-block;
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.188rem
+}
+*/
+
+body.sub .listMap {
+    display: inline-block;
+    width: 100%;
+    height: 340px;
+    background: #999;
+}
+
+body.sub .tab.near {
+    text-align: center;
+}
+
+body.sub .tab.near p {
+    display: inline-block;
+    width: 10rem;
+    margin: 1.250rem auto;
+    height: 2.250rem;
+    line-height: 2.000rem;
+    border-radius: 1.125rem;
+    border: 0.125rem solid #f7941d;
+}
+
+body.sub .tab.near a {
+    display: block;
+    width: 46%;
+    float: left;
+    text-align: center;
+    color: #f7941d;
+}
+
+body.sub .tab.near a.active {
+    background: #f7941d;
+    width: 54%;
+    border-radius: 2.000rem;
+    color: #fff;
+}
+
+body.sub .subList {
+    padding: 0 0.625rem;
+}
+
+body.sub .subList .item {
+    padding: 0.625rem 0 0.625rem 6.500rem;
+    min-height: 7.125rem;
+    position: relative;
+    border-bottom: 0.063rem solid #e2e2e2;
+}
+
+body.sub .subList img {
+    display: block;
+    width: 5.875rem;
+    height: 5.875rem;
+    position: absolute;
+    left: 0px;
+    top: 0.625rem;
+}
+
+body.sub .subList h4 {
+    color: #333;
+    font-size: 1.125rem;
+}
+
+body.sub .subList ul {
+    display: inline-block;
+    margin: 0.375rem 0 0.625rem;
+}
+
+body.sub .subList li {
+    list-style: none;
+    display: inline-block;
+    color: #f7941d;
+}
+
+body.sub .subList li.bookmark {
+    position: absolute;
+    right: 0;
+    top: 0.625rem;
+}
+
+body.sub .subList span.icon {
+    position: relative;
+    top: 0.250rem;
+    margin-right: 0.25rem;
+    display: inline-block;
+    width: 1.125rem;
+    height: 1.125rem
+}
+
+body.sub .subList p {
+    color: #555;
+}
+
+body.sub .subList span.icon.review {
+    background: url('../images/iconReview.png') no-repeat center / 100%
+}
+
+body.sub .subList span.icon.recommend {
+    background: url('../images/iconRecommend.png') no-repeat center / 100%
+}
+
+body.sub .subList span.icon.distance {
+    background: url('../images/iconDistance.png') no-repeat center / 100%
+}
+
+body.sub .subList span.icon.bookmark {
+    width: 1.125rem;
+    height: 1.438rem;
+    background: url('../images/iconBookmarkC.png') no-repeat center / 100%
+}
+
+body.sub .subList span.icon.bookmark.on {
+    width: 1.125rem;
+    height: 1.438rem;
+    background: url('../images/iconBookmarkCOn.png') no-repeat center / 100%
+}
+
+body.sub .contents {
+    margin-top: 3.146rem
+}
+
+body.sub .talkInput {
+    position: fixed;
+    padding: 0.646rem 0.917rem;
+    height: 4.583rem;
+    +left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff
+}
+
+body.sub .talkInput input {
+    display: block;
+    float: left;
+    font-size: 1rem;
+    padding: 0 0.938rem;
+    height: 3.313rem;
+    width: calc(100% - 7.313rem);
+    border: 0.250rem solid #f7941d
+}
+
+body.sub .talkInput button {
+    display: block;
+    float: right;
+    height: 3.313rem;
+    width: 3.563rem;
+    background: #f6f6f6;
+    border-radius: 0;
+    border: 0.063rem solid #e0e0e0
+}
+
+body.sub .talkInput a {
+    display: block;
+    float: left;
+    width: 2.375rem;
+    margin-right: 1.125rem;
+    height: 3.313rem;
+    background: url('../images/addPhoto.png') no-repeat center / 2.375rem 2.413rem;
+    text-indent: 6249.938rem;
+}
+
+body.sub header.big {
+    height: 10.250rem;
+}
+
+body.sub header.big button.back {
+    bottom: 5.750rem;
+}
+
+body.sub header.big hr {
+    width: 2.458rem;
+    margin: 0 auto;
+    border-top: 0.063rem solid #000
+}
+
+body.sub header.big p {
+    font-size: 0.938rem;
+    color: #666;
+}
+
+body.sub header.big .utilBtn {
+    position: absolute;
+    bottom: 0.250rem;
+    width: 100%;
+    padding: 0 1.563rem;
+    text-align: center
+}
+
+body.sub header.big .utilBtn li {
+    display: inline-block;
+    padding: 0 0.063rem;
+}
+
+body.sub header.big .utilBtn li button {
+    color: #000;
+    outline: none;
+    height: 3.5rem;
+    background: transparent;
+    width: 100%
+}
+
+body.sub header.big .utilBtn li button span.icon {
+    position: relative;
+    top: 0.250rem;
+    margin-right: 0.25rem;
+    display: inline-block;
+    width: 1.125rem;
+    height: 1.125rem
+}
+
+body.sub header.big .utilBtn li button span.bookMark {
+    background: url('../images/iconBookmarkB.png') no-repeat center / 100%
+}
+
+body.sub header.big .utilBtn li button.on span.bookMark {
+    background-image: url('../images/iconBookmarkOn.png')
+}
+
+body.sub header.big .utilBtn li button span.share {
+    background: url('../images/iconShareB.png') no-repeat center / 100%
+}
+
+body.sub header.big button.map {
+    position: absolute;
+    z-index: 500;
+    right: 1rem;
+    bottom: -1.250rem;
+    text-indent: -6249.938rem;
+    margin-left: 0.375rem;
+    width: 2.604rem;
+    height: 2.604rem;
+    outline: none;
+    border-radius: 1.302rem;
+    background: url('../images/btnSubMap.png') no-repeat #ef8200 center / 100%
+}
+
+.articleList.subMain {
+    margin-top: 10.250rem;
+}
+
+
+/* --------------  sub view --------------  */
+
+body.view header button.back, body.view header.fade-transparent button.back {
+    background-image: url('../images/btnBackW.png')
+}
+
+body.view header.fade-background button.back {
+    background-image: url('../images/btnBack.png')
+}
+
+body.view header {
+    background-color: transparent;
+    border: none
+}
+
+body.view header h2 {
+    color: transparent;
+    font-size: 0;
+}
+
+body.view header.fade-background {
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    border-bottom: 0.067rem solid #e9e9e9
+}
+
+body.view header.fade-background h2 {
+    color: #000;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s
+}
+
+body.view header.fade-transparent h2 {
+    color: transparent;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s
+}
+
+body.view header.fade-transparent {
+    background-color: transparent;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s
+}
+
+body.view div.view {
+    display: inline-block;
+    width: 100%;
+    height: auto
+}
+
+body.view div.view .topImg {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+}
+
+body.view div.view .topImg img {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+body.view div.view .topImg .overlay {
+    display: block;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/viewOverlay.png') no-repeat center / 100% 100%
+}
+
+body.view div.view .bx-controls {
+    display: inline-block;
+    position: absolute;
+    padding-right: 1.438rem;
+    background: url('../images/iconBxpager.png') no-repeat right center / 0.875rem 0.563rem;
+    line-height: 0.625rem;
+    right: 0.938rem;
+    top: 2.958rem;
+    font-size: 0.688rem;
+    color: #fff;
+    font-weight: 800;
+}
+
+body.view div.view .head {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body.view div.view .head h3 {
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    bottom: 6.125rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    width: 100%
+}
+
+body.view div.view .head span.label {
+    display: inline-block;
+    position: absolute;
+    bottom: 8.583rem;
+    color: #fff;
+    font-size: 0.813rem;
+    text-align: center;
+    width: 100%;
+}
+
+body.view div.view .head span.label hr {
+    width: 2.458rem;
+    margin: 0.625rem auto;
+    border-top: 0.063rem solid #fff
+}
+
+body.view div.view .head .utilBtn {
+    position: absolute;
+    bottom: 2.688rem;
+    width: 100%;
+    padding: 0 1.563rem;
+    text-align: center
+}
+
+body.view div.view .head .utilBtn li {
+    display: inline-block;
+    padding: 0 0.063rem;
+}
+
+body.view div.view .head .utilBtn li button {
+    color: #fff;
+    outline: none;
+    height: 3.5rem;
+    background: transparent;
+    width: 100%
+}
+
+body.view div.view .head .utilBtn li button span.icon {
+    position: relative;
+    top: 0.250rem;
+    margin-right: 0.25rem;
+    display: inline-block;
+    width: 1.125rem;
+    height: 1.125rem
+}
+
+body.view div.view .head .utilBtn li button span.bookMark {
+    background: url('../images/iconBookmark.png') no-repeat center / 100%
+}
+
+body.view div.view .head .utilBtn li button.on span.bookMark {
+    background-image: url('../images/iconBookmarkOn.png')
+}
+
+body.view div.view .head .utilBtn li button span.reply {
+    background: url('../images/iconReply.png') no-repeat center / 100%
+}
+
+body.view div.view .head .utilBtn li button span.share {
+    background: url('../images/iconShare.png') no-repeat center / 100%
+}
+
+body.view div.view .head .utilBtn li button span.value {
+    background: url('../images/iconValue.png') no-repeat center / 100%
+}
+
+body.view .info .btnRoad {
+    position: absolute;
+    z-index: 500;
+    right: 1rem;
+    top: -1.250rem
+}
+
+body.view .info .btnRoad button {
+    text-indent: -6249.938rem;
+    margin-left: 0.375rem;
+    width: 2.604rem;
+    height: 2.604rem;
+    outline: none;
+    border-radius: 1.302rem
+}
+
+body.view .info .btnRoad button.road {
+    background: url('../images/btnSubLoad.png') no-repeat #ef8200 center / 100%
+}
+
+body.view .info .btnRoad button.map {
+    background: url('../images/btnSubMap.png') no-repeat #ef8200 center / 100%
+}
+
+body.view .info {
+    position: relative;
+    background: #fff;
+    padding: 1.250rem 0 0;
+    z-index: 2
+}
+
+body.view .info h4 {
+    margin-bottom: 1.250rem;
+    text-align: center
+}
+
+body.view .info h4 hr {
+    width: 1.521rem;
+    margin: 0.625rem auto;
+    border-top: 0.063rem solid #000
+}
+
+body.view .info p.btitle {
+    font-size: 1.125rem;
+    margin-bottom: 1.250rem
+}
+
+body.view .info .article {
+    padding: 2.125rem 0 2.215rem
+}
+
+body.view .info .introduce {
+    text-align: center
+}
+
+body.view .guide {
+    background: #f1f1f1;
+    position: relative
+}
+
+body.view .guide ul.guide span {
+    display: inline-block;
+    position: absolute;
+    left: 0.5rem;
+    margin: 0 0.229rem 0 0.64rem;
+    text-indent: -6249.938rem;
+    width: 1.146rem;
+    height: 1.146rem
+}
+
+body.view .guide ul.guide li {
+    position: relative;
+    padding: 0 0 0.688rem 2.5rem
+}
+
+body.view .guide ul.guide .location span {
+    background: url('../images/iconGuide01.png') no-repeat center / 100%
+}
+
+body.view .guide ul.guide .phone span {
+    background: url('../images/iconGuide02.png') no-repeat center / 100%
+}
+
+body.view .guide ul.guide .site span {
+    background: url('../images/iconGuide03.png') no-repeat center / 100%
+}
+
+body.view .guide ul.guide .mail span {
+    background: url('../images/iconGuide04.png') no-repeat center / 100%
+}
+
+body.view .guide ul.guide .time span {
+    background: url('../images/iconGuide05.png') no-repeat center / 100%
+}
+
+body.view .guide ul.guide a {
+    color: #000
+}
+
+body.view .guide div.icons {
+    display: block;
+    padding: 1.813rem 1.563rem 0;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap
+}
+
+body.view .guide div.icons::-webkit-scrollbar {
+    display: none
+}
+
+body.view .guide div.icons li {
+    display: inline-block;
+    margin-right: 0.688rem;
+    text-align: center;
+    font-size: 0.625rem
+}
+
+body.view .guide div.icons li span {
+    display: block;
+    width: 2.917rem;
+    height: 2.917rem;
+    margin-bottom: 0.5rem
+}
+
+body.view .guide div.icons .iconPrice span {
+    background: url('../images/iconPrice.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconHandicap span {
+    background: url('../images/iconHandicap.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconLowprice span {
+    background: url('../images/iconLowprice.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconSuperb span {
+    background: url('../images/iconSuperb.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconWifi span {
+    background: url('../images/iconWifi.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconEng span {
+    background: url('../images/iconEng.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconChn span {
+    background: url('../images/iconChn.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconJpn span {
+    background: url('../images/iconJpn.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconParking span {
+    background: url('../images/iconParking.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconCard span {
+    background: url('../images/iconCard.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconCash span {
+    background: url('../images/iconCash.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconRestroom span {
+    background: url('../images/iconRestroom.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconStore span {
+    background: url('../images/iconStore.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconElevator span {
+    background: url('../images/iconElevator.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .iconSmorking span {
+    background: url('../images/iconSmorking.png') no-repeat center bottom / 100% auto
+}
+
+body.view .guide div.icons .on {
+    color: #ef8200
+}
+
+body.view .guide div.icons .on span {
+    background-position: center top
+}
+
+body.view .photos ul {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+
+body.view .photos li {
+    display: inline-block;
+}
+
+body.view .photos li a {
+    display: block;
+    position: relative;
+    width: 140px;
+    height: 170px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+
+body.view .photos li strong {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    padding-left: 34px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #555;
+    width: 100%;
+    font-size: 0.825rem;
+    border: 1px solid #eee;
+    border-left: none;
+    border-top: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+body.view .photos li strong::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: url('../images/listLogo.png') no-repeat #2AC1BC center /100%;
+}
+
+body.view .photos li img {
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+body.view .photos li.more a {
+    background: #eee;
+    width: 70px;
+    color: #999;
+    padding-top: 50px;
+    text-align: center;
+}
+
+body.view .photos li.more i {
+    display: block;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.photoView {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    padding: 50px 20px 20px;
+}
+
+.photoView .photo-outline {
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+    background: #4f4f4f;
+}
+
+.photoView img {
+    width: 100%;
+    height: auto;
+}
+
+.photoView h3 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 0;
+}
+
+.photoView h3 i {
+    display: block;
+    font-style: normal;
+    float: right;
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+}
+
+.photoView .rate-area a {
+    display: inline-block;
+    position: relative;
+    background: #2ac1bc;
+    color: #222;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 10px;
+    font-weight: 800;
+}
+
+.photoView p {
+    background: #EEEEEE;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+}
+
+.photoView h4::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url('../images/listLogo.png') no-repeat #000 center /100%;
+}
+
+.photoView h4 {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px 0 48px;
+    display: block;
+    text-align: left !important;
+    font-weight: 400;
+    background: #fff;
+    color: #222;
+}
+
+.photoView .btn.close {
+    background: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.photoList {
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.photoList .grid-item {
+    width: calc(100% / 2);
+    padding: 5px;
+}
+
+.photoList .grid-item a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-right: 6px;
+    overflow: hidden;
+}
+
+.photoList .grid-item strong {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    background: #fff;
+    padding-left: 34px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #555;
+    width: 100%;
+    font-size: 0.825rem;
+    border: 1px solid #eee;
+    border-left: none;
+    border-top: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.photoList .grid-item strong::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: url('../images/listLogo.png') no-repeat #2AC1BC center /100%;
+}
+
+.photoList .grid-item img {
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+body.view div.talk .btnReview {
+    padding: 1.250rem 1.563rem 2.063rem 1.563rem
+}
+
+body.view div.talk .btnReview .btn {
+    border: 0.063rem solid #272e38;
+    font-size: 1.063rem;
+    color: #313b49;
+    padding: 0;
+    width: 49%;
+    height: 2.875rem;
+    line-height: 2.875rem;
+    border-radius: 0;
+    background: #fff
+}
+
+body.view div.talk .btnReview .write {
+    float: left
+}
+
+body.view div.talk .btnReview .more {
+    float: right
+}
+
+body.view div.talk .btnReview span {
+    display: inline-block;
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-left: 0.250rem
+}
+
+body.view div.talk .btnReview .write span {
+    background: url('../images/iconReviewWrite.png') no-repeat center / 100% 100%
+}
+
+body.view div.talk .btnReview .more span {
+    background: url('../images/iconReviewMore.png') no-repeat center / 100% 100%
+}
+
+body.view div.talk .talkInput {
+    display: none;
+}
+
+body.view .popup {
+    position: absolute;
+    display: none;
+    padding: 1.375rem 0.625rem;
+    width: calc(100% - 1.876rem);
+    margin: 0 0.938rem;
+    z-index: 500;
+    border: 0.063rem solid #000;
+    background: #fff
+}
+
+body.view .popup h2 {
+    font-size: 1.063rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0.688rem
+}
+
+body.view .popup p.text {
+    font-size: 0.938rem
+}
+
+body.view .popup p.text.small {
+    font-size: 0.813rem
+}
+
+body.view .popup.handicap li {
+    list-style: none
+}
+
+body.view .popup button {
+    padding: 0;
+    text-indent: -6249.938rem
+}
+
+body.view .popup .close {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+    width: 1.021rem;
+    height: 1.021rem;
+    background: url('../images/btnPopupClose.png') no-repeat center / 100% 100%
+}
+
+body.view .popup.value, body.view .popup.share {
+    text-align: center
+}
+
+body.view .popup .star {
+    width: 1.833rem;
+    height: 1.833rem;
+    margin: 0 0.188rem 0.688rem;
+    background: url('../images/btnStar.png') no-repeat center top / 100% auto
+}
+
+body.view .popup .star.on {
+    background-position: center bottom
+}
+
+body.view .popup.share .btnSns button {
+    width: 3.125rem;
+    height: 3.125rem;
+    text-indent: -6249.938rem;
+    padding: 0;
+    margin: 0 0.125rem 0.688rem;
+    border-radius: 4.688rem
+}
+
+body.view .popup.share button.facebook {
+    background: url('../images/snsFacebook.png') no-repeat #ef8200 center / 100%
+}
+
+body.view .popup.share button.kakao {
+    background: url('../images/snsKakao.png') no-repeat #ef8200 center / 100%
+}
+
+body.view .popup.share button.insta {
+    background: url('../images/snsInsta.png') no-repeat #ef8200 center / 100%
+}
+
+body.view .popup.share button.twitter {
+    background: url('../images/snsTwitter.png') no-repeat #ef8200 center / 100%
+}
+
+body.view .popup.share button.line {
+    background: url('../images/snsLine.png') no-repeat #ef8200 center / 100%
+}
+
+body.view .popup.handicap .level {
+    height: 1.875rem;
+    margin-bottom: 0.625rem;
+    font-size: 0.875rem;
+    vertical-align: top
+}
+
+body.view .popup.handicap .level span {
+    position: relative;
+    top: 0.5rem;
+    display: inline-block;
+    width: 1.438rem;
+    height: 1.875rem;
+    margin-right: 0.458rem
+}
+
+body.view .popup.handicap .level span.level1 {
+    background: url('../images/handicapLevel1.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap .level span.level2 {
+    background: url('../images/handicapLevel2.png') no-repeat center / 100%;
+}
+
+body.view .popup.handicap .level span.level3 {
+    background: url('../images/handicapLevel3.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li {
+    float: left;
+    width: 50%;
+    font-size: 0.875rem
+}
+
+body.view .popup.handicap li span {
+    display: inline-block;
+    position: relative;
+    top: 0.5rem;
+    margin-right: 0.563rem;
+    width: 1.917rem;
+    height: 1.875rem
+}
+
+body.view .popup.handicap li.no1 span {
+    background: url('../images/handicap1.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no2 span {
+    background: url('../images/handicap2.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no3 span {
+    background: url('../images/handicap3.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no4 span {
+    background: url('../images/handicap4.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no5 span {
+    background: url('../images/handicap5.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no6 span {
+    background: url('../images/handicap6.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no7 span {
+    background: url('../images/handicap7.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no8 span {
+    background: url('../images/handicap8.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no9 span {
+    background: url('../images/handicap9.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no10 span {
+    background: url('../images/handicap10.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no11 span {
+    background: url('../images/handicap11.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no12 span {
+    background: url('../images/handicap12.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no13 span {
+    background: url('../images/handicap13.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no14 span {
+    background: url('../images/handicap14.png') no-repeat center / 100%
+}
+
+body.view .popup.handicap li.no15 span {
+    background: url('../images/handicap15.png') no-repeat center / 100%
+}
+
+
+/* --------------  sub talk -------------- */
+
+body.sub header.talkList {
+    position: relative;
+    height: 9.938rem;
+}
+
+body.sub header.talkList h3 {
+    font-size: 1.063rem;
+    font-weight: 400;
+    color: #f7941d;
+    line-height: 1;
+    padding-bottom: 0.813rem;
+}
+
+body.sub header.talkList h3 span {
+    display: inline-block;
+    position: relative;
+    top: 0.375rem;
+    width: 1.146rem;
+    height: 1.438rem;
+    background: url('../images/iconTalk.png') no-repeat center / 100%;
+    margin-right: 0.375rem;
+}
+
+body.sub header.talkList p {
+    font-size: 0.688rem;
+    color: #666;
+    line-height: 1.2;
+}
+
+body.sub div.talkList {
+    margin-top: 0;
+    line-height: 1;
+}
+
+body.sub div.talkList h4 {
+    font-size: 0.813rem;
+    padding: 1.875rem 0 0.625rem 1.542rem;
+    font-weight: 400;
+}
+
+body.sub div.talkList .myTalk li {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: hidden;
+    text-align: right;
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+body.sub div.talkList .myTalk li a {
+    position: relative;
+    padding: 1.250rem 1.625rem;
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+    width: calc(100% + 5rem);
+    display: block;
+    background: #1cbbb4;
+    height: 4.979rem;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+body.sub div.talkList .myTalk h5 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 0.250rem;
+}
+
+body.sub div.talkList .myTalk li p {
+    display: block;
+    font-size: 0.875rem;
+    width: calc(100% - 10.625rem);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+body.sub div.talkList .myTalk li ul {
+    position: absolute;
+    right: 5.938rem;
+    top: 1.250rem;
+}
+
+body.sub div.talkList .myTalk li li {
+    display: block;
+    float: left;
+    margin-left: 0.250rem;
+    font-size: 0.688rem;
+    text-align: center;
+    color: #1cbbb4;
+    overflow: hidden;
+    background: #fff;
+    width: 2.375rem;
+    height: 2.375rem;
+    border-radius: 1.188rem;
+}
+
+body.sub div.talkList .myTalk li li img {
+    width: 100%;
+    height: auto;
+}
+
+body.sub div.talkList .myTalk li li span {
+    display: block;
+    margin: 0.375rem auto 0.125rem;
+    width: 0.708rem;
+    height: 0.750rem;
+    text-indent: -99999px;
+    background: url('../images/iconTalkmember.png') no-repeat center / 100%;
+}
+
+body.sub div.talkList .myTalk li .delete {
+    display: block;
+    position: absolute;
+    color: #fff;
+    right: 0;
+    top: 0;
+    width: 5rem;
+    background: #666666;
+    padding: 0;
+    height: 4.917rem;
+    line-height: 4.917rem;
+    border-radius: 0;
+}
+
+body.sub div.talkList .list li {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: hidden;
+    text-align: right;
+    list-style: none;
+    margin-bottom: 0.313rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+body.sub div.talkList .list li a {
+    position: relative;
+    padding: 1.250rem 1.625rem;
+    color: #000;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    ;
+    background: #f8f8f8;
+    height: 4.979rem;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+body.sub div.talkList .list h5 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 0.250rem;
+}
+
+body.sub div.talkList .list li p {
+    display: block;
+    color: #666;
+    font-size: 0.875rem;
+    width: calc(100% - 3.750rem);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+body.sub div.talkList .list li ul {
+    position: absolute;
+    right: 0.938rem;
+    top: 1.250rem;
+}
+
+body.sub div.talkList .list li li {
+    display: block;
+    float: left;
+    margin-left: 0.250rem;
+    font-size: 0.688rem;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    background: #f9a543;
+    width: 2.375rem;
+    height: 2.375rem;
+    border-radius: 1.188rem;
+}
+
+body.sub div.talkList .list li li span {
+    display: block;
+    margin: 0.375rem auto 0.125rem;
+    width: 0.708rem;
+    height: 0.750rem;
+    text-indent: -99999px;
+    background: url('../images/iconTalkmember2.png') no-repeat center / 100%;
+}
+
+body.talk div.talk::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url('../images/talkBg.png') repeat-y #f1f1f1 left top / 2.521rem 1rem
+}
+
+body.talk div.talk {
+    margin-bottom: 4.583rem;
+    padding-top: 2.5rem
+}
+
+div.talk dt {
+    position: relative;
+    float: left;
+    margin-left: 0.938rem;
+    margin-top: 0
+}
+
+div.talk dd {
+    text-overflow: auto;
+    position: relative;
+    min-height: 4rem;
+    padding: 0.542rem 1.563rem 0 4.625rem;
+    margin-bottom: 1.250rem;
+    width: 100%
+}
+
+div.talk dt img {
+    width: 2.979rem;
+    height: 2.979rem;
+    border-radius: 2.979rem
+}
+
+div.talk .name {
+    font-weight: 400;
+    margin: 0 0 0.458rem;
+    font-size: 0.875rem
+}
+
+div.talk .name small {
+    margin-left: 0.375rem;
+    font-size: 0.813rem;
+    color: #666
+}
+
+div.talk .myTalk .text {
+    background: #fff;
+    padding: 0.625rem
+}
+
+div.talk .myTalk button {
+    position: absolute;
+    right: 0.875rem;
+    top: 1.375rem;
+    width: 1.208rem;
+    height: 1.208rem;
+    border-radius: 0.604rem;
+    background: url('../images/talkDel.png') no-repeat #666666 center center / 60%;
+    padding: 0;
+    text-indent: -6249.938rem
+}
+
+
+/* -------------- sub mypage -------------- */
+
+body.myPage .Profile {
+    z-index: 400;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    padding: 0 0.938rem;
+    border-bottom: 0.063rem solid #e9e9e9;
+    height: 16.208rem
+}
+
+body.myPage .Profile img {
+    margin: 3.979rem 0 0.938rem;
+    width: 6.146rem;
+    height: 6.146rem;
+    border-radius: 3.073rem
+}
+
+body.myPage .Profile h2 {
+    font-size: 1.438rem;
+    font-weight: 400
+}
+
+body.myPage .Profile .mail span {
+    display: inline-block;
+    position: relative;
+    top: 0.25rem;
+    margin-right: 0.229rem;
+    width: 1.146rem;
+    height: 1.146rem;
+    background: url('../images/iconGuide04.png') no-repeat center / 100%
+}
+
+body.myPage .Profile button {
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+body.myPage .Profile .btn.myphoto {
+    position: absolute;
+    right: 0.938rem;
+    bottom: 1.62rem;
+    width: 2.250rem;
+    height: 2.250rem;
+    text-indent: -6249.938rem;
+    border: 0.063rem solid #333;
+    border-radius: 50%;
+    background: url('../images/btnMyphoto.png') no-repeat center / 100%
+}
+
+body.myPage .Profile .btn.logout {
+    position: absolute;
+    right: 0.938rem;
+    top: 2.667rem
+}
+
+body.myPage .Profile .btn.logout span {
+    display: inline-block;
+    position: relative;
+    top: 0.25rem;
+    margin-right: 0.229rem;
+    width: 1.146rem;
+    height: 1.146rem;
+    background: url('../images/btnLogout.png') no-repeat center / 100%
+}
+
+body.myPage nav.myPage {
+    display: inline-block;
+    position: absolute;
+    z-index: 998;
+    top: 16.208rem;
+    left: 0;
+    right: 0;
+    background: #fff;
+    line-height: 1.4
+}
+
+body.myPage nav.myPage.fixed {
+    position: fixed;
+    top: 0;
+    animation-duration: 0.2s;
+    /* animation-name: fade-in */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        top: -1.875rem;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+body.myPage nav.myPage ul {
+    padding: 0;
+    margin: 0
+}
+
+body.myPage nav.myPage li {
+    display: block;
+    position: relative;
+    float: left;
+    width: calc(100% / 3);
+    font-size: 0.938rem;
+    height: 5.729rem;
+    text-align: center;
+    border-bottom: 0.063rem solid #e9e9e9;
+    cursor: pointer
+}
+
+body.myPage nav.myPage li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #000
+}
+
+body.myPage nav.myPage li a:active, body.myPage nav.myPage li a:hover {
+    text-decoration: none
+}
+
+body.myPage nav.myPage li.active, body.myPage nav.myPage li.active a {
+    color: #f07c00;
+    text-decoration: none
+}
+
+body.myPage nav.myPage li span.icon {
+    display: block;
+    width: 1.667rem;
+    height: 1.667rem;
+    margin: 1.5rem auto 0
+}
+
+body.myPage nav.myPage li.favorite span.icon {
+    background: url('../images/btnFavorite.png') no-repeat center top / 100%;
+}
+
+body.myPage nav.myPage li.schedule span.icon {
+    background: url('../images/btnSchedule.png') no-repeat center top / 100%;
+}
+
+body.myPage nav.myPage li.timeline span.icon {
+    background: url('../images/btnTimeline.png') no-repeat center top / 100%
+}
+
+body.myPage nav.myPage li.active span.icon {
+    background-position: center bottom
+}
+
+body.myPage nav.myPage li span.label {
+    display: block;
+    left: 50%;
+    top: 1.125rem;
+    height: 1.188rem;
+    line-height: 1.250rem;
+    min-width: 1.188rem;
+    border-radius: 0.594rem;
+    font-size: 0.813rem;
+    font-weight: 800;
+    color: #fff;
+    background: #00a651;
+    margin-left: 0.25rem;
+    position: absolute
+}
+
+body.myPage nav.myPage li span.label.counter {
+    padding: 0 0.625rem;
+    margin-left: 0.5rem
+}
+
+body.myPage div.data {
+    margin-top: 5.729rem
+}
+
+body.myPage div.data {
+    margin-top: 5.729rem
+}
+
+body.myPage div.schedule.list li {
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    height: 6.188rem;
+    padding: 0.625rem 0.938rem;
+    background: url("../images/btnMypageList.png") no-repeat #f8f8f8 right center / 2.292rem auto;
+    margin-bottom: 0.25rem
+}
+
+body.myPage div.schedule.list li a {
+    display: block;
+    height: 100%;
+    color: #000
+}
+
+body.myPage div.schedule.list li img {
+    display: block;
+    float: left;
+    margin: 0 0.625rem;
+    height: 100%;
+    border-bottom: 0.063rem solid #e9e9e9
+}
+
+body.myPage div.schedule.list li .label {
+    display: inline-block;
+    border: 0.063rem solid #000;
+    border-radius: 0.594rem;
+    font-size: 0.875rem;
+    height: 1.188rem;
+    line-height: 1.25rem;
+    margin-top: 0.5rem;
+    padding: 0 0.375rem
+}
+
+body.myPage div.schedule.list li .date {
+    font-size: 0.875rem;
+    font-weight: 800;
+    padding-top: 0.25rem;
+    color: #666
+}
+
+body.myPage div.schedule.list li h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+body.myPage div.data.empty {
+    position: absolute;
+    z-index: -1;
+    height: calc(100% - (16.208rem + 5.729rem));
+    padding-top: 3.125rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: #f1f1f1
+}
+
+body.myPage div.data.empty h3 {
+    font-size: 1.250rem;
+    margin-bottom: 0.875rem;
+    font-weight: 400
+}
+
+body.myPage div.data.empty p {
+    font-size: 0.813rem;
+    color: #666
+}
+
+body.myPage div.schedule.view .info {
+    padding: 1.667rem 0;
+    background: #1cbbb4;
+    color: #fff;
+    text-align: center
+}
+
+body.myPage div.schedule.view .info h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+body.myPage div.schedule.view .info .label {
+    display: inline-block;
+    border: 0.063rem solid #fff;
+    border-radius: 0.594rem;
+    font-size: 0.875rem;
+    height: 1.188rem;
+    line-height: 1.25rem;
+    margin-top: 0.5rem;
+    padding: 0 0.375rem
+}
+
+body.myPage div.schedule.view .info .date {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 800;
+    padding-top: 0.25rem
+}
+
+body.myPage div.schedule nav.date {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+}
+
+body.myPage div.schedule nav.date li {
+    display: block;
+    position: relative;
+    float: left;
+    text-align: center;
+    height: 2rem;
+    font-size: 0.875rem
+}
+
+body.myPage div.schedule nav.date li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 2rem;
+    color: #000
+}
+
+body.myPage div.schedule nav.date li.active a {
+    display: block;
+    position: relative;
+    top: -0.938rem;
+    width: 2.938rem;
+    height: 2.938rem;
+    padding-top: 0.25rem;
+    line-height: 1rem;
+    margin: 0 auto;
+    font-size: 0.5rem;
+    background: #fff;
+    border: 0.125rem solid #1cbbb4;
+    border-radius: 1.469rem;
+    color: #000
+}
+
+body.myPage div.schedule nav.date li.active a strong {
+    display: block;
+    font-size: 1.563rem;
+    font-weight: 400
+}
+
+body.myPage div.schedule.view .day {
+    margin-top: 1.583rem;
+    padding: 0 0.938rem;
+}
+
+body.myPage div.schedule.view .day li {
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    height: 4.313rem;
+    background: #f8f8f8;
+    margin-bottom: 1.188rem
+}
+
+body.myPage div.schedule.view .day li a {
+    display: block;
+    height: 100%;
+    color: #000
+}
+
+body.myPage div.schedule.view .day li img {
+    display: block;
+    float: left;
+    margin-right: 0.625rem;
+    height: 100%;
+    border-bottom: 0.063rem solid #e9e9e9
+}
+
+body.myPage div.schedule.view li h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding-top: 0.750rem;
+}
+
+body.myPage div.schedule.view li p.text {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+body.myPage .dotLine {
+    z-index: -1;
+    position: fixed;
+    width: 0.188rem;
+    left: 50%;
+    margin-left: -0.094rem;
+    top: 0;
+    bottom: 0;
+    background: url('../images/talkBg.png') repeat-y #f1f1f1 right top / 2.521rem 1rem
+}
+
+body.myPage div.timeline {
+    min-height: 18.750rem;
+    padding: 1.375rem 0;
+    background: url('../images/talkBg.png') repeat-y #f1f1f1 left top / 2.521rem 1rem
+}
+
+div.timeline dd {
+    text-overflow: auto;
+    position: relative;
+    min-height: 4rem;
+    padding: 0.375rem 1.563rem 0 3.729rem;
+    margin-bottom: 1.250rem;
+    width: 100%
+}
+
+div.timeline dt {
+    float: left;
+    margin-left: 1.688rem;
+    margin-top: 0;
+    width: 1.521rem;
+    height: 1.521rem;
+    border-radius: 2.979rem
+}
+
+div.timeline dt span {
+    display: inline-block;
+    background: url('../images/iconTimeline.png') no-repeat center / 100%;
+    text-indent: -6249.938rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.979rem
+}
+
+div.timeline .time {
+    margin: 0 0.25rem 0.375rem;
+    font-size: 0.813rem;
+    color: #666
+}
+
+div.timeline .text {
+    display: inline-block;
+    background: #fff;
+    padding: 0.625rem
+}
+
+div.timeline .text strong {
+    color: #f07c00
+}
+
+div.timeline button {
+    position: absolute;
+    right: 0.875rem;
+    top: 2.5rem;
+    width: 1.208rem;
+    height: 1.208rem;
+    border-radius: 0.604rem;
+    background: url('../images/talkDel.png') no-repeat #666666 center center / 60%;
+    padding: 0;
+    text-indent: -6249.938rem
+}
+
+
+/* --------------  search -------------- */
+
+body.search div.search::before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #f1f1f1;
+}
+
+div.search.layer {
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    top: 3.766rem;
+    left: 0;
+    right: 0;
+}
+
+body.search div.search {
+    margin-top: 4.375rem
+}
+
+div.search .searchInput {
+    background: #fff;
+    padding: 0.500rem 0.938rem 0.563rem;
+    border-bottom: 0.063rem solid #e9e9e9
+}
+
+div.search .searchInput fieldset {
+    height: 3.938rem;
+    border: 0.5rem solid #000
+}
+
+div.search .searchInput input {
+    display: block;
+    float: left;
+    font-size: 1.063rem;
+    padding: 0 0.938rem;
+    height: 100%;
+    width: calc(100% - 3.813rem);
+    border: none
+}
+
+div.search .searchInput button {
+    display: block;
+    float: right;
+    height: 100%;
+    width: 2.583rem;
+    text-indent: -6249.938rem;
+    background: url('../images/btnSearch.png') no-repeat center / 100%;
+    border-radius: 0;
+    border: none
+}
+
+div.search h3 {
+    padding: 1.250rem 1.563rem;
+    font-size: 1.063rem;
+    font-weight: 400
+}
+
+div.search h3 strong {
+    color: #f07c00;
+    font-weight: 400
+}
+
+div.search h3.question {
+    padding: 0;
+    font-size: 1.875rem;
+    margin: 0.417rem 1.5rem
+}
+
+
+/* --------------  moreView -------------- */
+
+body.more div.list::before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #f1f1f1;
+}
+
+body.more div.list {
+    margin-top: 4.375rem
+}
+
+body.more div.list ul {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.625rem
+}
+
+body.more div.list li {
+    background: #fff;
+    list-style: none;
+    height: 3.521rem;
+    padding: 0 1.563rem;
+    font-size: 1.063rem;
+    line-height: 3.521rem;
+    border-bottom: 0.063rem solid #e9e9e9
+}
+
+body.more div.list li a {
+    display: inline-block;
+    background: url('../images/iconMoreview.png') no-repeat right center / auto 100%;
+    width: 100%;
+    height: 100%;
+    color: #000
+}
+
+body.more div.list li.tel a {
+    background: url('../images/iconTel.png') no-repeat right center / 1.458rem
+}
+
+body.more div.list li .dt {
+    float: left
+}
+
+body.more div.list li .dd {
+    float: right;
+    font-size: 1.125rem;
+    font-weight: 800
+}
+
+body.more div.list li .dd.version {
+    color: #f7941d
+}
+
+body.more div.list li.tel .dd {
+    margin-right: 2.083rem
+}
+
+body.more div.list li span.label {
+    display: inline-block;
+    text-align: center;
+    height: 1.188rem;
+    line-height: 1.250rem;
+    min-width: 1.188rem;
+    border-radius: 0.594rem;
+    font-size: 0.813rem;
+    font-weight: 800;
+    color: #fff;
+    background: #f7941d;
+    margin-left: 0.25rem
+}
+
+body.more div.list li span.label.wide {
+    padding: 0 0.625rem
+}
+
+body.more div.list li span.label.off {
+    background: #9f9f9f
+}
+
+body.more div. ul {
+    margin-top: 0.625rem
+}
+
+
+/* --------------  map -------------- */
+
+body.main div.map {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 7.563rem;
+    bottom: 0;
+    overflow: scroll;
+    background: #f1f1f1
+}
+
+body.sub div.map {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 4.375rem;
+    bottom: 0;
+    overflow: scroll;
+    background: #f1f1f1;
+}
+
+isplay: inline-block;
+font-size: 0.875rem;
+font-weight: 800;
+padding-top: 0.25rem
+}
+body.myPage div.schedule nav.date {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+}
+body.myPage div.schedule nav.date li {
+    display: block;
+    position: relative;
+    float: left;
+    text-align: center;
+    height: 2rem;
+    font-size: 0.875rem
+}
+body.myPage div.schedule nav.date li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 2rem;
+    color: #000
+}
+body.myPage div.schedule nav.date li.active a {
+    display: block;
+    position: relative;
+    top: -0.938rem;
+    width: 2.938rem;
+    height: 2.938rem;
+    padding-top: 0.25rem;
+    line-height: 1rem;
+    margin: 0 auto;
+    font-size: 0.5rem;
+    background: #fff;
+    border: 0.125rem solid #1cbbb4;
+    border-radius: 1.469rem;
+    color: #000
+}
+body.myPage div.schedule nav.date li.active a strong {
+    display: block;
+    font-size: 1.563rem;
+    font-weight: 400
+}
+body.myPage div.schedule.view .day {
+    margin-top: 1.583rem;
+    padding: 0 0.938rem;
+}
+body.myPage div.schedule.view .day li {
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    height: 4.313rem;
+    background: #f8f8f8;
+    margin-bottom: 1.188rem
+}
+body.myPage div.schedule.view .day li a {
+    display: block;
+    height: 100%;
+    color: #000
+}
+body.myPage div.schedule.view .day li img {
+    display: block;
+    float: left;
+    margin-right: 0.625rem;
+    height: 100%;
+    border-bottom: 0.063rem solid #e9e9e9
+}
+body.myPage div.schedule.view li h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding-top: 0.750rem;
+}
+body.myPage div.schedule.view li p.text {
+    font-size: 0.875rem;
+    color: #666;
+}
+body.myPage .dotLine {
+    z-index: -1;
+    position: fixed;
+    width: 0.188rem;
+    left: 50%;
+    margin-left: -0.094rem;
+    top: 0;
+    bottom: 0;
+    background: url('../images/talkBg.png') repeat-y #f1f1f1 right top / 2.521rem 1rem
+}
+body.myPage div.timeline {
+    min-height: 18.750rem;
+    padding: 1.375rem 0;
+    background: url('../images/talkBg.png') repeat-y #f1f1f1 left top / 2.521rem 1rem
+}
+div.timeline dd {
+    text-overflow: auto;
+    position: relative;
+    min-height: 4rem;
+    padding: 0.375rem 1.563rem 0 3.729rem;
+    margin-bottom: 1.250rem;
+    width: 100%
+}
+div.timeline dt {
+    float: left;
+    margin-left: 1.688rem;
+    margin-top: 0;
+    width: 1.521rem;
+    height: 1.521rem;
+    border-radius: 2.979rem
+}
+div.timeline dt span {
+    display: inline-block;
+    background: url('../images/iconTimeline.png') no-repeat center / 100%;
+    text-indent: -6249.938rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.979rem
+}
+div.timeline .time {
+    margin: 0 0.25rem 0.375rem;
+    font-size: 0.813rem;
+    color: #666
+}
+div.timeline .text {
+    display: inline-block;
+    background: #fff;
+    padding: 0.625rem
+}
+div.timeline .text strong {
+    color: #f07c00
+}
+div.timeline button {
+    position: absolute;
+    right: 0.875rem;
+    top: 2.5rem;
+    width: 1.208rem;
+    height: 1.208rem;
+    border-radius: 0.604rem;
+    background: url('../images/talkDel.png') no-repeat #666666 center center / 60%;
+    padding: 0;
+    text-indent: -6249.938rem
+}
+
+/* --------------  search -------------- */
+body.search div.search::before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #f1f1f1;
+}
+: #f1f1f1;
+
+}
+div.search.layer {
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    top: 3.766rem;
+    left: 0;
+    right: 0;
+}
+body.search div.search {
+    margin-top: 4.375rem
+}
+div.search .searchInput {
+    background: #fff;
+    padding: 0.500rem 0.938rem 0.563rem;
+    border-bottom: 0.063rem solid #e9e9e9
+}
+div.search .searchInput fieldset {
+    height: 3.938rem;
+    border: 0.5rem solid #000
+}
+div.search .searchInput input {
+    display: block;
+    float: left;
+    font-size: 1.063rem;
+    padding: 0 0.938rem;
+    height: 100%;
+    width: calc(100% - 3.813rem);
+    border: none
+}
+div.search .searchInput button {
+    display: block;
+    float: right;
+    height: 100%;
+    width: 2.583rem;
+    text-indent: -6249.938rem;
+    background: url('../images/btnSearch.png') no-repeat center / 100%;
+    border-radius: 0;
+    border: none
+}
+div.search h3 {
+    padding: 1.250rem 1.563rem;
+    font-size: 1.063rem;
+    font-weight: 400
+}
+div.search h3 strong {
+    color: #f07c00;
+    font-weight: 400
+}
+div.search h3.question {
+    padding: 0;
+    font-size: 1.875rem;
+    margin: 0.417rem 1.5rem
+}
+
+/* --------------  moreView -------------- */
+body.more div.list::before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #f1f1f1;
+}
+body.more div.list {
+    margin-top: 4.375rem
+}
+body.more div.list ul {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.625rem
+}
+body.more div.list li {
+    background: #fff;
+    list-style: none;
+    height: 3.521rem;
+    padding: 0 1.563rem;
+    font-size: 1.063rem;
+    line-height: 3.521rem;
+    border-bottom: 0.063rem solid #e9e9e9
+}
+body.more div.list li a {
+    display: inline-block;
+    background: url('../images/iconMoreview.png') no-repeat right center / auto 100%;
+    width: 100%;
+    height: 100%;
+    color: #000
+}
+body.more div.list li.tel a {
+    background: url('../images/iconTel.png') no-repeat right center / 1.458rem
+}
+body.more div.list li .dt {
+    float: left
+}
+body.more div.list li .dd {
+    float: right;
+    font-size: 1.125rem;
+    font-weight: 800
+}
+body.more div.list li .dd.version {
+    color: #f7941d
+}
+body.more div.list li.tel .dd {
+    margin-right: 2.083rem
+}
+body.more div.list li span.label {
+    display: inline-block;
+    text-align: center;
+    height: 1.188rem;
+    line-height: 1.250rem;
+    min-width: 1.188rem;
+    border-radius: 0.594rem;
+    font-size: 0.813rem;
+    font-weight: 800;
+    color: #fff;
+    background: #f7941d;
+    margin-left: 0.25rem
+}
+body.more div.list li span.label.wide {
+    padding: 0 0.625rem
+}
+body.more div.list li span.label.off {
+    background: #9f9f9f
+}
+body.more div. ul {
+    margin-top: 0.625rem
+}
+
+/* --------------  map -------------- */
+body.main div.map {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 7.563rem;
+    bottom: 0;
+    overflow: scroll;
+    background: #f1f1f1
+}
+body.sub div.map {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 4.375rem;
+    bottom: 0;
+    overflow: scroll;
+    background: #f1f1f1;
+}
+
+/* sub | TripAll */
+.intro-area {
+    padding:20px 15px;
+}
+.intro-area .sec-header {
+    text-align:center;
+}
+.intro-area .sec-header h2 {
+    margin:10px 0;
+}
+.TripAll {
+    margin-top: 30px;
+}
+.TripAll .head {
+    border-top: 2px solid #333333;
+    color: #333;
+    font-size: 14px;
+    height: 98px;
+}
+.TripAll .head h4 {
+    position: relative;
+    display: block;
+    font-weight: 400;
+    font-size: 17px;
+    height: 52px;
+    line-height: 52px;
+}
+.TripAll .head .label {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px;
+    top: -2px;
+    line-height: 1.2;
+    font-size: 14px;
+    height: 23px;
+    line-height: 23px;
+    margin-right: 6px;
+    background: #333;
+    color: #fff;
+}
+.TripAll .head .icon.open {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    width: 17px;
+    height: 20px;
+    text-indent: -99999px;
+    background: url('../images/iconUnlock.png') no-repeat left center / 100% 100%;
+}
+.TripAll .head .tag {
+    display: block;
+    border-top: 1px solid #e2e2e2;
+    height: 43px;
+    line-height: 43px;
+    background: url('../images/iconTag.png') no-repeat left center / 11.3px 8.6px;
+    padding-left: 18px;
+}
+.TripAll .infoText {
+    border: 1px solid #e2e2e2;
+    line-height: 1.6;
+    font-size: 15px;
+    border-left: none;
+    border-right: none;
+    color: #666666;
+    background: #f0f0f0;
+    padding: 20px 10px;
+}
+.TripAll .tabs {
+    display: inline-block;
+    width: 100%;
+    height: 113px;
+    text-align: center
+}
+.TripAll .tabs li {
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.TripAll .tabs li:first-child {
+    border-right: 1px solid #e2e2e2;
+}
+.TripAll .tabs li a {
+    display: block;
+    cursor: pointer;
+    height: 51px;
+    padding: 0 40px;
+    color: #999;
+    text-align: center;
+}
+.TripAll .tabs li a.active {
+    color: #333;
+}
+.TripAll .tabs li span.icon {
+    display: block;
+    width: 30px;
+    height: 23px;
+    margin: 0 auto 10px;
+}
+.TripAll .tabs li span.timeline {
+    background: url('../images/iconTime.png') no-repeat center top / 100% auto;
+}
+.TripAll .tabs li span.map {
+    background: url('../images/iconMap.png') no-repeat center top / 100% auto;
+}
+.TripAll .tabs li a.active span {
+    background-position: center bottom;
+}
+.tabData.timeline {
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    text-align: left;
+    border-left: none;
+    border-right: none;
+    padding: 20px 20px 30px;
+    color: #666666;
+    background: url('../images/bgTimeline.png') repeat-y #f0f0f0 76px top / 2px auto;
+}
+.tabData.timeline h5 {
+    display:block;
+    float:left;
+    font-weight:400;
+    width: 45px;
+    font-size: 15px;
+    color: #333
+}
+.tabData.timeline ul {
+    display: inline-block;
+    width:calc(100% - 45px);
+}
+.tabData.timeline li {
+    padding-left: 34px;
+    background: url('../images/iconTimes.png') no-repeat left top / 23px;
+    padding-bottom: 20px;
+}
+.tabData.timeline p.time {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 8px;
+    color: #333;
+}
+.tabData.timeline p.location {
+    display: inline-block;
+    height:19px;
+    padding-top:2px;
+    position: relative;
+    top:0;
+    line-height: 1;
+    font-size: 15px;
+    background: url('../images/iconPointer.png') no-repeat left top / 14.33px 19px;
+    padding-left: 18px;
+    color: #333;
+}
+.tabData.timeline p.text {
+    width:100%;
+    border: 1px solid #e2e2e2;
+    margin-top: 12px;
+    padding: 10px;
+    background: #fff;
+}
+.TripAll .tabData.maps {
+    display: none;
+    width: 100%;
+}
+.TripAll .tabData.maps .mapView {
+    width: 100%;
+    height: 395px;
+    margin-bottom: 18px;
+    background: #e2e2e2;
+}
+.TripAll .tabData.maps .list {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    height: auto;
+    background: #f0f0f0;
+}
+.TripAll .tabData.maps .list h5 {
+    display: block;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 17px;
+    background: #333;
+    text-align: center;
+    font-weight: 400;
+}
+.TripAll .tabData.maps .list .bx-item {
+    display: inline-block;
+}
+.TripAll .tabData.maps .list .bx-controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.TripAll .tabData.maps .list .bx-prev, .TripAll .tabData.maps .list .bx-next {
+    position: absolute;
+    text-indent: -99999px;
+    display: block;
+    width: 11px;
+    height: 21px;
+}
+.TripAll .tabData.maps .list .bx-prev {
+    left: 10px;
+    background: url('../images/btnLeft.png') no-repeat center / 100%;
+}
+.TripAll .tabData.maps .list .bx-next {
+    right: 10px;
+    background: url('../images/btnRight.png') no-repeat center / 100%;
+}
+.TripAll .tabData.maps .list dl {
+    float: left;
+    width: 100%;
+    ;
+    width: calc(100% - 40px);
+}
+.TripAll .tabData.maps .list dt {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 52px;
+    height: 52px;
+    border-radius: 29px;
+    line-height: 52px;
+    text-align: center;
+    color: #333;
+    background: #fff;
+    border: 3px solid #bdbdbd;
+}
+.TripAll .tabData.maps .list dd {
+    position: relative;
+    display: inline-block;
+    background: url('../images/bgTimeline.png') repeat-y #f0f0f0 6px top / 2px auto;
+    left: 50%;
+    padding: 20px 0;
+    margin-left: -7px;
+}
+.TripAll .tabData.maps .list dd p {
+    height: 31px;
+    line-height: 31px;
+    background: url('../images/iconPointer.png') no-repeat left center / 14.33px 19px;
+    padding-left: 18px;
+}
+.TripAll .tabData {
+    display: none;
+    margin-bottom: 20px;
+}
+.TripAll .tabData.on {
+    display: block;
+}
