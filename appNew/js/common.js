@@ -8,25 +8,39 @@ function masonry() {
 }
 
 function mapData() {
-  $('#mapData').bxSlider({
-    auto : false,
-    adaptiveHeight: true,
-    pager:false
-  });
+    $('#mapData').bxSlider({
+        auto: false,
+        adaptiveHeight: true,
+        pager: false
+    });
 
 }
 $(document).ready(function() {
-mapData();
+    mapData();
 
-  // 여행일정 탭
-	$('.tabs a').on('click', function() {
-		var activeTab = $(this).attr('data');
-		$('.tabs a').removeClass('active');
-		$('div.tabData').removeClass('on');
-		$('div#'+ activeTab).addClass('on');
-		$(this).addClass('active');
+    $('.locationList li a').click(function() {
+        $('.locationList li').removeClass('active');
+        $(this).parent().addClass('active');
+        var backpos = $(this).attr('data-num') - 1;
+        $('.locationList ul').css('background-position', 'left -' + backpos * 200 + 'px');
 
-	});
+        console.log(backpos);
+
+
+    });
+
+
+
+
+    // 여행일정 탭
+    $('.tabs a').on('click', function() {
+        var activeTab = $(this).attr('data');
+        $('.tabs a').removeClass('active');
+        $('div.tabData').removeClass('on');
+        $('div#' + activeTab).addClass('on');
+        $(this).addClass('active');
+
+    });
 
 
     $(".photos li a.view").click(function() {

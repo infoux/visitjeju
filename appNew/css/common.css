@@ -479,45 +479,130 @@ header.normal h1 {
     background: rgba(0, 0, 0, 0.7)
 }
 
+.locationList div {
+    background: url('../images/mapBg.gif');
+}
+
 .locationList ul {
     display: inline-block;
-    background: #fff;
-    width: 100%;
-    padding: 1.250rem 0.938rem;
-    margin: 0
+    width: 320px;
+    height: 200px;
+    background: url('../images/locationMap.png') no-repeat top center / 100% auto;
+    margin: 30px auto;
 }
 
 .locationList li {
-    list-style: none;
-    display: block;
-    float: left;
-    width: calc(100% / 3);
-    height: 2.063rem;
-    margin-bottom: 0.688rem
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 0;
 }
 
 .locationList li a {
     display: block;
-    width: calc(100% - 1.250rem);
-    height: 2.063rem;
-    line-height: 2.063rem;
-    padding: 0;
-    font-size: 0.938rem;
-    color: #000;
-    margin: 0 0.625rem;
-    background: #f6f6f6;
-    border: 0.063rem solid #e0e0e0;
-    text-align: center
+    font-size: 13px;
+    color: #555;
 }
 
-.locationList li a:active, .locationList li a:hover {
-    text-decoration: none
-}
-
-.locationList li a.active {
-    background: #f7941d;
+.locationList li.active a {
+    background: #ef8201;
     color: #fff;
-    border-color: #f7941d
+    border-radius: 4px;
+}
+
+.locationList li.location01 {
+    margin-left: -20px;
+    top: 78px;
+}
+
+.locationList li.location02 {
+    margin-left: 34px;
+    top: 62px;
+}
+
+.locationList li.location03 {
+    margin-left: 74px;
+    top: 60px;
+}
+
+.locationList li.location04 {
+    margin-left: 100px;
+    top: 90px;
+}
+
+.locationList li.location05 {
+    margin-left: 70px;
+    top: 112px;
+}
+
+.locationList li.location06 {
+    margin-left: 36px;
+    top: 128px;
+}
+
+.locationList li.location07 {
+    margin-left: -8px;
+    top: 144px;
+}
+
+.locationList li.location08 {
+    margin-left: -42px;
+    top: 148px;
+}
+
+.locationList li.location09 {
+    margin-left: -84px;
+    top: 152px;
+}
+
+.locationList li.location10 {
+    margin-left: -116px;
+    top: 158px;
+}
+
+.locationList li.location11 {
+    margin-left: -118px;
+    top: 130px;
+}
+
+.locationList li.location12 {
+    margin-left: -100px;
+    top: 112px;
+}
+
+.locationList li.location13 {
+    margin-left: -68px;
+    top: 94px;
+}
+
+.locationList li.location14 {
+    margin-left: -62px;
+    top: 28px;
+}
+
+.locationList li.location15 {
+    margin-left: 130px;
+    top: 38px;
+}
+
+.locationList li.location16 {
+    margin-left: -82px;
+    top: 196px;
+}
+
+.locationList li.location17 {
+    margin-left: -134px;
+    top: 212px;
+}
+
+.locationList li.location18 {
+    margin-left: -158px;
+    top: 144px;
+}
+
+.locationList li.location19 {
+    margin-left: -142px;
+    top: 86px;
 }
 
 .locationList .btn.locationClose {
