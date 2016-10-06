@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*!
+ * main.css
+ * 메인 정의 스타일
+ */
+
+ /*! visual */
+ .visual-area {width: 100%;}
+ .visual-area .bxslider {width: 100%;}
+ .visual-area .bx-wrapper {position: relative;padding: 0;*zoom: 1;}
+ .visual-area .bx-wrapper img {display: block; width:100%; min-height:300px; }
+ .visual-area .bx-controls {position: relative;}
+ .visual-area .bx-controls .bx-pager {position: absolute; bottom:35px; left: 0; width:100%; height:10px; text-align:center}
+ .visual-area .bx-controls .bx-pager-item {display:inline-block; font-size:0; margin:0 4px;}
+ .visual-area .bx-controls .bx-pager-item a {display: inline-block; width:10px; height:10px; background:#000; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%}
+ .visual-area .bx-controls .bx-pager-item a.active {width:10px; height:10px; background:#fd9e00;}
+ .visual-area .bx-controls-direction {display: none}
+ .visual-area .bx-item .title-area {position: absolute; top:18%; width:100%; text-align:center}
+ .visual-area .bx-item .title-area * {display: block;}
+ .visual-area .bx-item .title-area .title {font-size:27px; letter-spacing:-1px; color:#000; }
+ .visual-area .bx-item .title-area .txt {font-size:17px; margin-top:25px; letter-spacing:-1px; color:#000; }
+
+ /* theme-travel */
+.theme-travel header {padding:30px 0;}
+.theme-travel header h2 {text-align:center; }
+.theme-travel header h2 span {font-size:20px; letter-spacing:-1px; vertical-align:middle; font-weight:normal; }
+.theme-travel header h2 span:after {content:''; width:20px; height:20px; display:inline-block; vertical-align:text-top; margin-left:5px; background:url(../images/common/sp_comm.png) -71px 0 no-repeat; background-size:200px auto; color:#000; }
+.theme-travel header h2 + p {font-size:17px; color:#333; text-align:center; line-height:20px; letter-spacing:-1px; padding-top:10px }
+.theme-travel article {padding:0 15px; margin-top:10px; line-height:0; }
+.theme-travel header+article {margin-top:0; }
+.theme-travel article a {display:block; position:relative;}
+.theme-travel article img {width:100%; min-height:185px; }
+.theme-travel article span {color:#fff; position:absolute; bottom:20px; left:20px; font-size:17px; line-height:22px; font-weight:bold; }

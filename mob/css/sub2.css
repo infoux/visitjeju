@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*!
+ * sub.css
+ * 서브 공통 정의 스타일
+ */
+ @media (max-width:360px){html{font-size:14px;}}
+ @media (min-width:361px) and (max-width:413px){html{font-size:15px;}}
+ @media (min-width:414px){html{font-size:16px;}}
+
+#container img {max-width: 100%; vertical-align: middle;}
+.visual-area {position: relative;}
+.visual-area a {display: block;}
+.visual-area .title {position: absolute; bottom:38px; left:0; width: 100%; font-size: 1.313rem; color: #fff; text-align: center}
+
+/* sub */
+.page-sub .intro-area {padding:30px 15px 60px}
+.page-sub .intro-area .sec-header {text-align: center;}
+.page-sub .intro-area .sec-header .title {font-size: 1.563rem; color: #000; word-break: keep-all;}
+.page-sub .intro-area .sec-header .explain {margin-top:15px; font-size:1.063rem; color: #333; letter-spacing: -1px; word-break: keep-all;}
+.page-sub .intro-area .sec-body {margin-top:30px}
+.page-sub .intro-area .sec-body ul {margin:-0.313rem; overflow: hidden;}
+.page-sub .intro-area .sec-body li {float:left; width: 50%; padding:0.313rem; -webkit-box-sizing: border-box;; -moz-box-sizing: border-box;; box-sizing: border-box;}
+.page-sub .intro-area .sec-body li a {display: block;}
+.page-sub .intro-area .sec-body li figure {position: relative;}
+.page-sub .intro-area .sec-body li figcaption {position: absolute; bottom:1rem; left:1.250rem; right:1.250rem; color:#fff; font-size:1.063rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}

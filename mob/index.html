@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>제주관광공사</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/common.ui.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// 메인 비쥬얼.
+			$('#mainVisual').bxSlider({
+				auto: true
+					// mode: 'fade'
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<header id="header">
+			<a href="javascript:;" class="btn-all-menu"><span class="spr_com allmenu">전체메뉴</span></a>
+			<h1 class="logo"><span class="blind">제주관광공사</span></h1>
+			<button type="button" class="btn-srch"><span class="spr_com srch">검색</span></button>
+		</header>
+		<!-- //header -->
+
+		<!-- //all Menu -->
+		<!--
+		body hidden 하는 클래스  class="body-hidden"
+	 -->
+		<aside id="allMenu" style="display:none">
+			<header>
+				<h1 class="logo"><span class="blind">제주관광공사</span></h1>
+				<button type="button" class="btn-close"><span class="spr_com close">닫기</span></button>
+			</header>
+			<ul>
+				<li class="locationList">
+					<a href="#" class="">지역정보</a>
+					<div class="sub">
+						<ul>
+							<li class="location01 active"><a data-num="1" href="#">제주시</a></li>
+							<li class="location02"><a data-num="2" href="#">조천</a></li>
+							<li class="location03"><a data-num="3" href="#">구좌</a></li>
+							<li class="location04"><a data-num="4" href="#">성산</a></li>
+							<li class="location05"><a data-num="5" href="#">표선</a></li>
+							<li class="location06"><a data-num="6" href="#">남원</a></li>
+							<li class="location07"><a data-num="7" href="#">서귀포</a></li>
+							<li class="location08"><a data-num="8" href="#">중문</a></li>
+							<li class="location09"><a data-num="9" href="#">안덕</a></li>
+							<li class="location10"><a data-num="10" href="#">대정</a></li>
+							<li class="location11"><a data-num="11" href="#">한경</a></li>
+							<li class="location12"><a data-num="12" href="#">한림</a></li>
+							<li class="location13"><a data-num="13" href="#">애월</a></li>
+							<li class="location14"><a data-num="14" href="#">추자도</a></li>
+							<li class="location15"><a data-num="15" href="#">우도</a></li>
+							<li class="location16"><a data-num="16" href="#">가파도</a></li>
+							<li class="location17"><a data-num="17" href="#">마라도</a></li>
+							<li class="location18"><a data-num="18" href="#">차귀도</a></li>
+							<li class="location19"><a data-num="19" href="#">비양도</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">볼거리와 즐길거리</a>
+					<div class="sub links">
+						<ul>
+							<li><a href="#">모든 지역정보 &amp; 지도</a></li>
+							<li><a href="#">국립공원</a></li>
+							<li><a href="#">자연명소</a></li>
+							<li><a href="#">제주시</a></li>
+							<li><a href="#">애월</a></li>
+							<li><a href="#">한림</a></li>
+							<li><a href="#">한경</a></li>
+							<li><a href="#">조천</a></li>
+							<li><a href="#">구좌</a></li>
+							<li><a href="#">성산</a></li>
+							<li><a href="#">서귀포</a></li>
+							<li><a href="#">대정</a></li>
+							<li><a href="#">안덕</a></li>
+							<li><a href="#">중문</a></li>
+							<li><a href="#">남원</a></li>
+							<li><a href="#">표선</a></li>
+							<li><a href="#">섬속의 섬</a></li>
+							<li><a href="#">유명지역</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">기본정보</a>
+					<div class="sub links">
+						<ul>
+							<li><a href="#">모든 지역정보 &amp; 지도</a></li>
+							<li><a href="#">국립공원</a></li>
+							<li><a href="#">자연명소</a></li>
+							<li><a href="#">제주시</a></li>
+							<li><a href="#">애월</a></li>
+							<li><a href="#">한림</a></li>
+							<li><a href="#">한경</a></li>
+							<li><a href="#">조천</a></li>
+							<li><a href="#">구좌</a></li>
+							<li><a href="#">성산</a></li>
+							<li><a href="#">서귀포</a></li>
+							<li><a href="#">대정</a></li>
+							<li><a href="#">안덕</a></li>
+							<li><a href="#">중문</a></li>
+							<li><a href="#">남원</a></li>
+							<li><a href="#">표선</a></li>
+							<li><a href="#">섬속의 섬</a></li>
+							<li><a href="#">유명지역</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">추천 여행 일정</a>
+					<div class="sub links">
+						<ul>
+							<li><a href="#">모든 지역정보 &amp; 지도</a></li>
+							<li><a href="#">국립공원</a></li>
+							<li><a href="#">자연명소</a></li>
+							<li><a href="#">제주시</a></li>
+							<li><a href="#">애월</a></li>
+							<li><a href="#">한림</a></li>
+							<li><a href="#">한경</a></li>
+							<li><a href="#">조천</a></li>
+							<li><a href="#">구좌</a></li>
+							<li><a href="#">성산</a></li>
+							<li><a href="#">서귀포</a></li>
+							<li><a href="#">대정</a></li>
+							<li><a href="#">안덕</a></li>
+							<li><a href="#">중문</a></li>
+							<li><a href="#">남원</a></li>
+							<li><a href="#">표선</a></li>
+							<li><a href="#">섬속의 섬</a></li>
+							<li><a href="#">유명지역</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">제주도 방문하기</a>
+					<div class="sub links">
+						<ul>
+							<li><a href="#">모든 지역정보 &amp; 지도</a></li>
+							<li><a href="#">국립공원</a></li>
+							<li><a href="#">자연명소</a></li>
+							<li><a href="#">제주시</a></li>
+							<li><a href="#">애월</a></li>
+							<li><a href="#">한림</a></li>
+							<li><a href="#">한경</a></li>
+							<li><a href="#">조천</a></li>
+							<li><a href="#">구좌</a></li>
+							<li><a href="#">성산</a></li>
+							<li><a href="#">서귀포</a></li>
+							<li><a href="#">대정</a></li>
+							<li><a href="#">안덕</a></li>
+							<li><a href="#">중문</a></li>
+							<li><a href="#">남원</a></li>
+							<li><a href="#">표선</a></li>
+							<li><a href="#">섬속의 섬</a></li>
+							<li><a href="#">유명지역</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">교통</a>
+					<div class="sub links">
+						<ul>
+							<li><a href="#">모든 지역정보 &amp; 지도</a></li>
+							<li><a href="#">국립공원</a></li>
+							<li><a href="#">자연명소</a></li>
+							<li><a href="#">제주시</a></li>
+							<li><a href="#">애월</a></li>
+							<li><a href="#">한림</a></li>
+							<li><a href="#">한경</a></li>
+							<li><a href="#">조천</a></li>
+							<li><a href="#">구좌</a></li>
+							<li><a href="#">성산</a></li>
+							<li><a href="#">서귀포</a></li>
+							<li><a href="#">대정</a></li>
+							<li><a href="#">안덕</a></li>
+							<li><a href="#">중문</a></li>
+							<li><a href="#">남원</a></li>
+							<li><a href="#">표선</a></li>
+							<li><a href="#">섬속의 섬</a></li>
+							<li><a href="#">유명지역</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">숙박시설</a>
+					<div class="sub links">
+						<ul>
+							<li><a href="#">모든 지역정보 &amp; 지도</a></li>
+							<li><a href="#">국립공원</a></li>
+							<li><a href="#">자연명소</a></li>
+							<li><a href="#">제주시</a></li>
+							<li><a href="#">애월</a></li>
+							<li><a href="#">한림</a></li>
+							<li><a href="#">한경</a></li>
+							<li><a href="#">조천</a></li>
+							<li><a href="#">구좌</a></li>
+							<li><a href="#">성산</a></li>
+							<li><a href="#">서귀포</a></li>
+							<li><a href="#">대정</a></li>
+							<li><a href="#">안덕</a></li>
+							<li><a href="#">중문</a></li>
+							<li><a href="#">남원</a></li>
+							<li><a href="#">표선</a></li>
+							<li><a href="#">섬속의 섬</a></li>
+							<li><a href="#">유명지역</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="aside-menu">
+				<a href="#">로그인</a>
+				<a href="#">마이페이지</a>
+				<a href="#">여행자센터</a>
+				<select>
+				<option>한국어</option>
+			</select>
+			</div>
+		</aside>
+		<!-- //all Menu -->
+
+		<!-- container -->
+		<div id="container">
+			<!-- section : visual -->
+			<section class="section visual-area">
+				<div id="mainVisual" class="bxslider">
+					<div class="bx-item item1">
+						<a href="#">
+							<span class="title-area">
+							<strong class="title">신나다</strong>
+							<span class="txt">생동하는 자연,  놀라운 영감,  신나는 제주</span>
+							</span>
+							<span class="pic"><img src="images/temp/@main_visual.jpg" alt=""></span>
+						</a>
+					</div>
+					<div class="bx-item item2">
+						<a href="#">
+							<span class="title-area">
+							<strong class="title">신나다</strong>
+							<span class="txt">생동하는 자연,  놀라운 영감,  신나는 제주</span>
+							</span>
+							<span class="pic"><img src="images/temp/@main_visual.jpg" alt=""></span>
+						</a>
+					</div>
+					<div class="bx-item item3">
+						<a href="#">
+							<span class="title-area">
+							<strong class="title">신나다</strong>
+							<span class="txt">생동하는 자연,  놀라운 영감,  신나는 제주</span>
+							</span>
+							<span class="pic"><img src="images/temp/@main_visual.jpg" alt=""></span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- //section : visual -->
+
+			<!-- section : theme-travel -->
+			<section class="section theme-travel">
+				<header>
+					<h2><span>다채로운 제주를 만나보세요</span></h2>
+					<p>매일 새로운 여정이 기다리는 제주도!<br />산, 바다, 맛 등 당신만의 여행을 경험해보세요!</p>
+				</header>
+				<article>
+					<a href="#">
+						<img src="images/temp/@theme-travel01.jpg" />
+						<span>아이들과 함께하는<br />가족여행</span>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<img src="images/temp/@theme-travel02.jpg" />
+						<span>국내 최초 오리지널 테디베어뮤지엄<br />제주 테디베어뮤지엄</span>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<img src="images/temp/@theme-travel03.jpg" />
+						<span>담백하게 쩌낸 부드러움 돔베고기<br />헤오름 식당</span>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<img src="images/temp/@theme-travel04.jpg" />
+						<span>제주 봄의 시작!<br />한림공원 튤립축제</span>
+					</a>
+				</article>
+			</section>
+			<!-- //section : theme-travel -->
+
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<div id="footer">
+			<p class="tel">제주관광안내 <span>1330</span></p>
+			<div class="foot-menu">
+				<a href="#">이용약관</a>
+				<a href="#">개인정보취급방침</a>
+				<a href="#">모바일 앱센터</a>
+			</div>
+			<address>© JEJU Tourism Organization</address>
+		</div>
+		<!-- //footer -->
+	</div>
+</body>
+
+</html>

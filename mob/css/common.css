@@ -1,0 +1,711 @@
+@charset "utf-8";
+@import url("./base.css");
+
+/*!
+ * common.css
+ * 기본 Layout 및 module Style Guide 정의.
+ */
+
+
+/* Layout */
+
+.body-hidden {
+    height: 100%;
+    overflow: hidden;
+}
+
+#wrap {}
+
+#header {
+    padding: 17px 0 15px;
+    position: relative;
+}
+
+#header .logo {
+    width: 146px;
+    height: 28px;
+    background: url('../images/common/img_logo.png') no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+#header .btn-all-menu {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+}
+
+#header .btn-srch {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+}
+
+#allMenu {
+    display: none;
+    transition: all 0.3s ease-out;
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 100;
+    background: #fff;
+    -webkit-overflow-scrolling: touch
+}
+
+#allMenu.active {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#allMenu header {
+    padding: 17px 0 15px;
+    position: relative;
+}
+
+#allMenu header .logo {
+    width: 146px;
+    height: 28px;
+    background: url('../images/common/img_logo.png') no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+#allMenu header .btn-close {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+}
+
+#allMenu>ul>li {
+    border-top: 1px solid #cbcbcb;
+}
+
+#allMenu>ul>li>a {
+    display: block;
+    height: 57px;
+    line-height: 57px;
+    padding-left: 20px;
+    color: #222;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+}
+
+#allMenu>ul>li>a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    width: 21px;
+    height: 21px;
+    background: url(../images/common/sp_comm.png) -137px 0 no-repeat;
+    background-size: 200px auto;
+}
+
+
+/*#allMenu > ul > li > a.active + .sub {display:block; }*/
+
+#allMenu>ul>li>a.active {
+    color: #ee8200;
+}
+
+#allMenu>ul>li>a.active:after {
+    background-position: -158px 0;
+}
+
+#allMenu>ul>li .links {
+    background: #ececec;
+    border-top: 1px solid #cbcbcb;
+    padding: 10px 20px;
+    overflow: hidden;
+    display: none;
+}
+
+#allMenu>ul>li .links>ul {
+    overflow: hidden;
+}
+
+#allMenu>ul>li .links>ul>li {
+    width: 50%;
+    float: right;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+#allMenu>ul>li .links>ul>li:nth-child(odd) {
+    float: left;
+    padding-left: 15px;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+#allMenu>ul>li .links>ul>li>a {
+    display: block;
+    padding: 7px 0;
+    font-size: 15px;
+    color: #666;
+    text-shadow: 1px 1px #fff;
+    letter-spacing: -1px;
+}
+
+#allMenu .aside-menu {
+    background: #1d1d1d;
+    padding: 30px 20px;
+}
+
+#allMenu .aside-menu a {
+    display: block;
+    color: #999;
+    line-height: 1;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#allMenu .aside-menu select {
+    position: relative;
+    width: 187px;
+    height: 44px;
+    box-sizing: border-box;
+    border: 2px solid #666;
+    color: #666;
+    background: #1d1d1d;
+    padding-left: 10px;
+    background: transparent url('../images/common/bg_select_arrow.png') no-repeat right center;
+    background-size: 23px 8px;
+    -webkit-appearance: none;
+    font-size: 15px;
+}
+
+.locationList {
+    position: relative;
+}
+
+.locationList div.sub {
+    position: relative;
+    min-width: 320px;
+    background: url('../images/common/mapBg.gif') !important;
+    text-align: center;
+}
+
+.locationList ul {
+    display: inline-block;
+    width: 320px;
+    height: 200px;
+    background: url('../images/common/locationMap.png') no-repeat top center / 100% auto;
+    margin: 30px auto;
+}
+
+.locationList li {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.locationList li a {
+    display: block;
+    font-size: 13px;
+    color: #555;
+}
+
+.locationList li.active a {
+    background: #ef8201;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.locationList li.location01 {
+    margin-left: -20px;
+    top: 78px;
+}
+
+.locationList li.location02 {
+    margin-left: 34px;
+    top: 62px;
+}
+
+.locationList li.location03 {
+    margin-left: 74px;
+    top: 60px;
+}
+
+.locationList li.location04 {
+    margin-left: 100px;
+    top: 90px;
+}
+
+.locationList li.location05 {
+    margin-left: 70px;
+    top: 112px;
+}
+
+.locationList li.location06 {
+    margin-left: 36px;
+    top: 128px;
+}
+
+.locationList li.location07 {
+    margin-left: -8px;
+    top: 144px;
+}
+
+.locationList li.location08 {
+    margin-left: -42px;
+    top: 148px;
+}
+
+.locationList li.location09 {
+    margin-left: -84px;
+    top: 152px;
+}
+
+.locationList li.location10 {
+    margin-left: -116px;
+    top: 158px;
+}
+
+.locationList li.location11 {
+    margin-left: -118px;
+    top: 130px;
+}
+
+.locationList li.location12 {
+    margin-left: -100px;
+    top: 112px;
+}
+
+.locationList li.location13 {
+    margin-left: -68px;
+    top: 94px;
+}
+
+.locationList li.location14 {
+    margin-left: -62px;
+    top: 28px;
+}
+
+.locationList li.location15 {
+    margin-left: 130px;
+    top: 38px;
+}
+
+.locationList li.location16 {
+    margin-left: -82px;
+    top: 196px;
+}
+
+.locationList li.location17 {
+    margin-left: -134px;
+    top: 212px;
+}
+
+.locationList li.location18 {
+    margin-left: -158px;
+    top: 144px;
+}
+
+.locationList li.location19 {
+    margin-left: -142px;
+    top: 86px;
+}
+
+#footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    text-align: center;
+    background: #3c3c3c;
+    color: #fff;
+}
+
+#footer .tel {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+#footer .tel span {
+    margin-top: -1px;
+    font-size: 17px;
+    color: #fd9e00;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer .foot-menu {
+    font-size: 14px;
+    padding: 20px 0;
+    letter-spacing: -1px;
+}
+
+#footer .foot-menu a {
+    color: #999;
+}
+
+#footer .foot-menu a:after {
+    content: '';
+    width: 1px;
+    height: 11px;
+    background: #4e4e4e;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 9px;
+}
+
+#footer .foot-menu a:last-child {
+    color: #fd9e00;
+}
+
+#footer .foot-menu a:last-child:after {
+    display: none;
+}
+
+#footer address {
+    font-size: 14px;
+    line-height: 13px;
+}
+
+
+/*! common | Icon */
+
+.spr_com {
+    display: inline-block;
+    background: url(../images/common/sp_comm.png) no-repeat;
+    background-size: 200px auto;
+    text-indent: -999px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.spr_com.allmenu {
+    width: 25px;
+    height: 25px;
+}
+
+
+/* 전체 메뉴 */
+
+.spr_com.srch {
+    width: 20px;
+    height: 25px;
+    background-position: -36px 0;
+}
+
+
+/* 검색 */
+
+.spr_com.close {
+    width: 21px;
+    height: 21px;
+    background-position: -179px 0;
+}
+
+
+/* 전체메뉴 닫기 */
+
+.spr_com.page-first {
+    width: 12px;
+    height: 12px;
+    background-position: 0 -30px;
+}
+
+
+/* paging 화살표 first */
+
+.spr_com.page-prev {
+    width: 7px;
+    height: 12px;
+    background-position: -15px -30px;
+}
+
+
+/* paging 화살표 previous */
+
+.spr_com.page-next {
+    width: 7px;
+    height: 12px;
+    background-position: -30px -30px;
+}
+
+
+/* paging 화살표 next */
+
+.spr_com.page-last {
+    width: 12px;
+    height: 12px;
+    background-position: -45px -30px;
+}
+
+
+/* paging 화살표 last */
+
+.spr_com.page-up {
+    width: 11px;
+    height: 6px;
+    background-position: -60px -30px;
+}
+
+
+/* page 이동 화살표 up */
+
+.spr_com.page-down {
+    width: 11px;
+    height: 6px;
+    background-position: -75px -30px;
+}
+
+
+/* page 이동 화살표 down*/
+
+.spr_com.btn-rv-del {
+    width: 12px;
+    height: 12px;
+    background-position: 0px -54px;
+}
+
+
+/* 덧글 삭제 버튼 */
+
+.spr_com.close.white {
+    width: 32px;
+    height: 32px;
+    background-position: -173px -28px;
+}
+
+
+/* 모달 닫기 X 버튼 */
+
+
+/*! Modal Layer */
+
+.modal {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0
+}
+
+.modal-open {
+    overflow: hidden
+}
+
+.modal.fade .modal-dialog {
+    opacity: 0;
+    transition: all 250ms ease-out;
+}
+
+.modal.in .modal-dialog {
+    opacity: 1
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 40px 10px;
+}
+
+.modal-dialog .btn-close {
+    position: absolute;
+    right: 0;
+    top: -32px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    outline: 0;
+    padding: 25px 20px;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.modal-backdrop.in {
+    opacity: 0.5;
+    filter: alpha(opacity=50)
+}
+
+.modal-header {}
+
+.modal-header .title {
+    position: relative;
+    margin-bottom: 18px;
+    line-height: 1;
+}
+
+.modal-header .title:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e2e2e2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.modal-header .title strong {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px 0 0;
+    z-index: 1;
+    font-size: 20px;
+    background: #fff;
+    font-weight: 300
+}
+
+.modal-header .title.ac strong {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.modal-body {
+    position: relative;
+}
+
+.modal-footer {
+    margin-top: 30px;
+    text-align: center
+}
+
+.modal-section+.modal-section {
+    margin-top: 30px;
+}
+
+
+/*! form style */
+
+.itextarea {
+    position: relative;
+    border: 1px solid #ddd;
+    background: #f0f0f0;
+    padding: 18px 10px;
+}
+
+.itextarea>textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 20px;
+    border: 0;
+    background: transparent;
+    font-size: 15px;
+    color: #333;
+    line-height: 20px;
+}
+
+.itextarea>.label {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    font-size: 15px;
+    color: #333;
+    line-height: 20px;
+}
+
+.es-line2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+.es-line1 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/*! INTRO */
+
+body.intro {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #f7941d;
+}
+
+body.intro h1 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 18%;
+    text-indent: -99999px;
+    width: 160.6px;
+    height: 180px;
+    margin-left: -80.3px;
+    background: url('../images/common/introLogo.png') no-repeat center / 100%;
+}
+
+body.intro div {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 62%;
+    width: 100%;
+    text-align: center;
+}
+
+body.intro a {
+    display: inline-block;
+    background: #fff;
+    color: #f7941d;
+    margin: 0 6px;
+    width: 63px;
+    height: 63px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 63px;
+    border-radius: 31.5px;
+}
+
+body.intro p {
+    display: block;
+    position: absolute;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 8%;
+    color: #fff;
+}
