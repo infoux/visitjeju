@@ -134,15 +134,6 @@ $(document).ready(function() {
         })
 
     });
-    $('.locationList li a').click(function() {
-        $('.locationList li').removeClass('active');
-        $(this).parent().addClass('active');
-        var backpos = $(this).attr('data-num') - 1;
-        $('.locationList ul').css('background-position', 'left -' + backpos * 200 + 'px');
-
-
-
-    });
 
 
     // 별점평가.

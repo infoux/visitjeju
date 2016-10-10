@@ -192,16 +192,24 @@
 .locationList div.sub {
     position: relative;
     min-width: 320px;
-    background: url('../images/common/mapBg.gif') !important;
+    background: #4fb1b3;
     text-align: center;
 }
 
 .locationList ul {
     display: inline-block;
     width: 320px;
-    height: 200px;
-    background: url('../images/common/locationMap.png') no-repeat top center / 100% auto;
+    height: 267px;
+    position: relative;
+    background: url('../images/common/map.png') no-repeat top center / 100% auto;
     margin: 30px auto;
+}
+
+.locationList li {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 0;
 }
 
 .locationList li {
@@ -224,97 +232,97 @@
 }
 
 .locationList li.location01 {
-    margin-left: -20px;
-    top: 78px;
-}
-
-.locationList li.location02 {
-    margin-left: 34px;
-    top: 62px;
-}
-
-.locationList li.location03 {
-    margin-left: 74px;
-    top: 60px;
-}
-
-.locationList li.location04 {
-    margin-left: 100px;
-    top: 90px;
-}
-
-.locationList li.location05 {
-    margin-left: 70px;
-    top: 112px;
-}
-
-.locationList li.location06 {
-    margin-left: 36px;
-    top: 128px;
-}
-
-.locationList li.location07 {
-    margin-left: -8px;
-    top: 144px;
-}
-
-.locationList li.location08 {
-    margin-left: -42px;
-    top: 148px;
-}
-
-.locationList li.location09 {
-    margin-left: -84px;
-    top: 152px;
-}
-
-.locationList li.location10 {
-    margin-left: -116px;
-    top: 158px;
-}
-
-.locationList li.location11 {
-    margin-left: -118px;
-    top: 130px;
-}
-
-.locationList li.location12 {
-    margin-left: -100px;
-    top: 112px;
-}
-
-.locationList li.location13 {
-    margin-left: -68px;
+    margin-left: -26px;
     top: 94px;
 }
 
+.locationList li.location02 {
+    margin-left: 30px;
+    top: 80px;
+}
+
+.locationList li.location03 {
+    margin-left: 76px;
+    top: 82px;
+}
+
+.locationList li.location04 {
+    margin-left: 102px;
+    top: 112px;
+}
+
+.locationList li.location05 {
+    margin-left: 66px;
+    top: 132px;
+}
+
+.locationList li.location06 {
+    margin-left: 24px;
+    top: 148px;
+}
+
+.locationList li.location07 {
+    margin-left: -14px;
+    top: 174px;
+}
+
+.locationList li.location08 {
+    margin-left: -52px;
+    top: 170px;
+}
+
+.locationList li.location09 {
+    margin-left: -100px;
+    top: 176px;
+}
+
+.locationList li.location10 {
+    margin-left: -134px;
+    top: 182px;
+}
+
+.locationList li.location11 {
+    margin-left: -142px;
+    top: 150px;
+}
+
+.locationList li.location12 {
+    margin-left: -122px;
+    top: 130px;
+}
+
+.locationList li.location13 {
+    margin-left: -80px;
+    top: 106px;
+}
+
 .locationList li.location14 {
-    margin-left: -62px;
-    top: 28px;
+    margin-left: -74px;
+    top: 54px;
 }
 
 .locationList li.location15 {
-    margin-left: 130px;
-    top: 38px;
+    margin-left: 137px;
+    top: 54px;
 }
 
 .locationList li.location16 {
-    margin-left: -82px;
-    top: 196px;
+    margin-left: -100px;
+    top: 220px;
 }
 
 .locationList li.location17 {
-    margin-left: -134px;
-    top: 212px;
+    margin-left: -152px;
+    top: 240px;
 }
 
 .locationList li.location18 {
-    margin-left: -158px;
-    top: 144px;
+    margin-left: -166px;
+    top: 116px;
 }
 
 .locationList li.location19 {
-    margin-left: -142px;
+    margin-left: -166px;
     top: 86px;
 }
 
