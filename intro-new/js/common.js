@@ -35,15 +35,49 @@ $(document).ready(function() {
         bgm.play();
     }
 
-    $("li.intro").mouseenter(function() {
+
+
+
+
+    function loading() {
+        $("li.intro .container").addClass("off");
+        $("li.intro .container").removeClass("on");
+    }
+    setTimeout(loading, 3000);
+        $("li.intro .container").mouseenter(function() {
         $(this).addClass("on");
+        $(this).removeClass("off");
     });
-    $("li.intro").mouseleave(function() {
+    $("li.intro .container").mouseleave(function() {
+        $(this).addClass("off");
         $(this).removeClass("on");
-
     });
 
 
 
+$(function() {
+    var i = 0
+
+    function fadeMyContent() {
+        if (i == 0) {
+
+            $(".intro h1 p:first").fadeIn(2000).delay(3000).fadeOut(700,
+                function() {
+                    $(this).appendTo($(this).parent());
+                    fadeMyContent();
+                });
+
+        } else {
+            $(".intro h1 p:first").fadeIn(2000).delay(3000).fadeOut(700,
+                function() {
+                    $(this).appendTo($(this).parent());
+                    fadeMyContent();
+                });
+        }
+
+        i = 1
+    }
+    fadeMyContent();
+});
 
 });
